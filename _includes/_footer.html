@@ -1,29 +1,24 @@
 <!-- Black Triangle -->
-<footer class="py-10 mt-10 bg-black">
-  <!-- Bar -->
-  <div class="flex items-center justify-between max-w-screen-lg px-2 mx-auto">
-    <a href="/">
-      <img class="h-12" src="/static/images/logo.png" alt="">
-    </a>
-    <div class="flex items-center justify-center gap-3">
-      <a href="{{ site.youtube }}">
-        <svg class="w-6 h-6">
-          <use xlink:href="/static/sprites/brands.svg#youtube"></use>
-        </svg>
-      </a>
-      <a href="{{ site.instagram }}">
+<footer style="background-image: linear-gradient(to right top, rgb(55, 9, 99), rgb(64, 43, 157), rgb(3, 143, 159))">
+  <div class="flex flex-col items-center justify-center gap-4 bg-center bg-no-repeat bg-cover" style="height: 80vh; background-image: url('/static/images/hero-pattern-bg.png');">
+    <h1 class="text-6xl font-bold">Interested to work with us?</h1>
+    <button class="px-16 py-4 mt-4 border-2 border-white rounded-full" data-toggle="modal" data-target="#contactModal">
+      <span>Let's talk!</span>
+    </button>
+    <div class="flex items-center justify-center gap-8 mt-12">
+      <a class="p-2 border-2 border-white rounded-full" href="{{ site.instagram }}">
         <svg class="w-6 h-6">
           <use xlink:href="/static/sprites/brands.svg#instagram"></use>
         </svg>
       </a>
-      <a href="{{ site.facebook }}">
+      <a class="p-2 border-2 border-white rounded-full" href="{{ site.behance }}">
         <svg class="w-6 h-6">
-          <use xlink:href="/static/sprites/brands.svg#facebook-square"></use>
+          <use xlink:href="/static/sprites/brands.svg#behance"></use>
         </svg>
       </a>
-      <a href="{{ site.spotify }}">
+      <a class="p-2 border-2 border-white rounded-full" href="{{ site.github }}">
         <svg class="w-6 h-6">
-          <use xlink:href="/static/sprites/brands.svg#spotify"></use>
+          <use xlink:href="/static/sprites/brands.svg#github"></use>
         </svg>
       </a>
     </div>
