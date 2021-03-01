@@ -1,0 +1,49 @@
+{
+  "editorial": [
+    {
+      "titulo": "Lugares Donde Dormí",
+      "imagen": "/static/images/uploads/editorial-lugares-donde-dormi.png",
+      "precio": 400,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "autor": "Lautaro N Hernández",
+      "instagram": "wilson.vvilson"
+    },
+    {
+      "titulo": "Espíritus Oscuros En Un Verano Luminoso",
+      "imagen": "/static/images/uploads/editorial-espiritus-oscuros-en-un-verano-luminoso.png",
+      "precio": 400,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "autor": "Fanzine Colaborativo",
+      "instagram": "indecisovampiro"
+    },
+    {
+      "titulo": "Diario de Ismael 3",
+      "imagen": "/static/images/uploads/editorial-diario-de-ismael-3.png",
+      "precio": 400,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "autor": "Lautaro N Hernández",
+      "instagram": "wilson.vvilson"
+    },
+    {
+      "titulo": "Las Cosas Que No Debes Hacer En Vivo",
+      "imagen": "/static/images/uploads/editorial-las-cosas-que-no-debes-hacer-en-vivo.png",
+      "precio": 400,
+      "url": "https://mpago.la/1rkEzcp",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "autor": "Fanzine Colaborativo",
+      "instagram": "indecisovampiro"
+    },
+    {
+      "titulo": "Inktober Vampiro",
+      "imagen": "/static/images/uploads/editorial-inktober-vampiro.png",
+      "precio": 200,
+      "url": "https://mpago.la/1rkEzcp",
+      "autor": "Fanzine Colaborativo",
+      "instagram": "indecisovampiro",
+      "descripcion": "lorem esp"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @apply text-white;
+}
+svg {
+  @apply fill-current;
+}
+section {
+  @apply px-5 py-24 sm:px-20 sm:py-24;
+}
+@tailwind utilities;

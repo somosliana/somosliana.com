@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve & postcss _styles/tailwind.css --output _site/tailwind.css --config _styles/postcss.config.js --watch",
+    "build": "eleventy && NODE_ENV=production postcss _styles/tailwind.css -o _site/tailwind.css"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "alpinejs": "^2.8.0",
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-debug-screens": "^1.1.0",
+    "tailwindcss-responsive-embed": "^1.0.0"
+  }
+}

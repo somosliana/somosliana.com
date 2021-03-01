@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="/tailwind.css" />
+  <script src="/alpine.js" defer></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!--<script src="debug.js" defer></script>-->
+  <style>
+    *:not(path):not(g):not(section) {
+      outline: solid 0px #4AF626 !important;
+    }
+
+    section {
+      outline: dashed 0px red !important;
+    }
+  </style>
+</head>
+
+<body style="background-image: linear-gradient(#000000, #00355A);">
+  {% include _header.html %}
+  {{ content }}
+  {% include _footer.html %}
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

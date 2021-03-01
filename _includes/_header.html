@@ -1,0 +1,89 @@
+<!-- Mobile -->
+<header class="block border-b-2 border-white md:hidden" x-data="{ isOpen: false }">
+  <!-- Bar -->
+  <div class="flex items-center justify-between max-w-screen-lg p-2 mx-auto">
+    <!-- Left -->
+    <a href="/">
+      <img class="h-12" src="/static/images/logo.png" alt="Indeciso Vampiro">
+    </a>
+    <!-- Right -->
+    <div class="flex items-center justify-center gap-2">
+      <a href="#">
+        <svg class="w-6 h-6">
+          <use xlink:href="/static/sprites/brands.svg#youtube"></use>
+        </svg>
+      </a>
+      <a href="#">
+        <svg class="w-6 h-6">
+          <use xlink:href="/static/sprites/brands.svg#instagram"></use>
+        </svg>
+      </a>
+      <button @click="isOpen = !isOpen" type="button">
+        <svg class="w-8 h-8">
+          <use x-show="!isOpen" xlink:href="/static/sprites/solid.svg#bars"></use>
+          <use x-show="isOpen" xlink:href="/static/sprites/solid.svg#times"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- List -->
+  <nav class="flex flex-col justify-between gap-3 px-2 pb-2" :class="isOpen ? 'block' : 'hidden'">
+    <!-- IDs /# -->
+    {% assign links = "música, audiovisuales, editorial" | split: ', ' %}
+    {% for l in links %}
+    <a href="/#{{l | slug}}" class="text-xl font-semibold uppercase">{{ l }}</a>
+    {% endfor %}
+    <!-- Pages / -->
+    {% assign links = "encuentros, talleres, juegos" | split: ', ' %}
+    {% for l in links %}
+    <a href="/proximamente" class="text-xl font-semibold uppercase">{{ l }}</a>
+    {% endfor %}
+  </nav>
+</header>
+
+<!-- Desktop -->
+<header class="hidden border-b-2 border-white md:block">
+  <!-- Bar -->
+  <div class="flex items-center justify-between max-w-screen-lg mx-auto">
+    <!-- Left -->
+    <div class="flex items-center justify-center gap-5 m-2">
+      <a href="{{ site.youtube }}">
+        <svg class="w-8 h-8">
+          <use xlink:href="/static/sprites/brands.svg#youtube"></use>
+        </svg>
+      </a>
+      <a href="{{ site.instagram }}">
+        <svg class="w-8 h-8">
+          <use xlink:href="/static/sprites/brands.svg#instagram"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- Middle -->
+    <nav class="flex items-center justify-between gap-3">
+      <!-- IDs /# -->
+      {% assign links = "música, audiovisuales, editorial" | split: ', ' %}
+      {% for l in links %}
+      <a href="/#{{l | slug}}" class="px-4 text-xl font-semibold uppercase">{{ l }}</a>
+      {% endfor %}
+      <!-- Pages / -->
+      {% assign links = "encuentros, talleres, juegos" | split: ', ' %}
+      {% for l in links %}
+      <a href="/{{l | slug}}" class="px-4 text-xl font-semibold uppercase">{{ l }}</a>
+      {% endfor %}
+    </nav>
+    <!-- Right -->
+    <div id="right" class="flex items-center justify-center gap-5 m-2">
+      <a href="/buscar">
+        <svg class="w-8 h-8">
+          <use xlink:href="/static/sprites/solid.svg#search"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="flex items-center justify-center px-0 py-16" style="background-image: linear-gradient(#006fbe, #1ba9e3)">
+  <a href="/">
+    <img class="w-56" src="/static/images/logo.png" alt="">
+  </a>
+</section>

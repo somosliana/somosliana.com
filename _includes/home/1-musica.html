@@ -1,0 +1,50 @@
+<!-- Separador -->
+<section id="musica" class="max-w-screen-lg px-0 mx-auto">
+  <div class="h-24 bg-center bg-no-repeat bg-cover" style="background-image: url('/static/images/separador.png');">
+</section>
+
+<!-- Radio en Vivo -->
+<section
+  class="grid max-w-screen-lg grid-cols-1 gap-12 mx-auto sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col">
+  <!-- Titulo -->
+  <div class="flex items-center justify-center">
+    <img class="" src="/static/images/stubs/radio-en-vivo.png" alt="">
+  </div>
+  <!-- Radio -->
+  <div class="flex items-center justify-center">
+    {% include home/_radio-widget.html %}
+  </div>
+ 
+</section>
+
+<!-- Bajate la App -->
+{% include home/_bajate-la-app.html %}
+
+<!-- Radio Vampira -->
+<section class="flex items-center justify-center max-w-screen-lg py-10 mx-auto">
+  <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
+  <img class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
+</section>
+
+<!-- Programacion -->
+<section class="flex flex-col max-w-screen-lg gap-4 mx-auto">
+  <h1 class="text-2xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
+  <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
+    {% for programa in programacion.programacion %}
+      <a href="/programas/{{ programa.titulo | slug }}/">
+        <img src="{{ programa.imagen }}" alt="">
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Streaming -->
+{% include home/_streaming.html %}
+
+<!-- Boton -->
+<div class="max-w-screen-lg mx-auto">
+  <a class="block pr-5 sm:pr-20" href="{{ site.spotify }}">
+    <div class="h-12 bg-right bg-no-repeat bg-cover sm:h-16" style="background-image: url('/static/images/stubs/spotify.png');">
+    </div>
+  </a>
+</div>

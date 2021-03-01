@@ -1,0 +1,60 @@
+---
+layout: default
+pagination:
+    data: programacion.programacion
+    size: 1
+    alias: programa
+permalink: "programas/{{ programa.titulo | slug }}/"
+---
+<!-- Radio Vampira -->
+<section class="flex items-center justify-center max-w-screen-lg py-10 mx-auto">
+  <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
+  <img class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
+</section>
+
+<!-- Card -->
+<section class="flex flex-col justify-around max-w-screen-lg py-24 mx-auto pt-14 sm:flex-row gap-7 sm:gap-14">
+  <!-- Imagen -->
+  <img class="sm:w-2/5" src="{{ programa.imagen }}" alt="">
+  <!-- Descripcion -->
+  <div class="flex flex-col justify-between gap-4 my-4">
+    <!-- Top -->
+    <div class="flex flex-col gap-4">
+      <!-- Header -->
+      <div class="border-b-2 border-blue-900">
+        <h2 class="text-2xl uppercase sm:text-3xl">{{ programa.dia }} {{ programa.hora }}</h2>
+        <h1 class="text-3xl uppercase sm:text-5xl">{{ programa.titulo }}</h1>
+        <h3 class="text-2xl text-blue-800 uppercase sm:text-3xl">{% for t in programa.tags %}#{{t}} {% endfor %}</h3>
+      </div>
+      <!-- Paragraph-->
+      <p class="text-base">{{ programa.descripcion }}</p>
+    </div>
+    <!-- Bottom -->
+    <div class="flex items-end justify-between">
+      <div class="flex flex-col">
+        <p class="text-base">Musicalización: {{ programa.musicalizacion }}</p>
+        <p class="text-base">Contacto: {{ programa.contacto }}</p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <p class="text-base text-right border-b-2 border-blue-900">Compartir</p>
+        <div class="flex gap-2">
+          <a href="https://wa.me/?text={{ site.baseURL }}{{ page.url }}">
+            <svg class="w-5 h-5">
+              <use xlink:href="/static/sprites/brands.svg#whatsapp"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/intent/tweet?url={{ site.baseURL }}{{ page.url }}">
+            <svg class="w-5 h-5">
+              <use xlink:href="/static/sprites/brands.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseURL }}{{ page.url }}">
+            <svg class="w-5 h-5">
+              <use xlink:href="/static/sprites/brands.svg#facebook"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

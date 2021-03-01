@@ -1,0 +1,28 @@
+#+TODO: TODO NEXT FIX ASK | REFACTOR
+* NEXT Fitty
+* NEXT Host own font
+* NEXT focus hover active
+* NEXT Separador
+* NEXT share buttons en editorial
+* NEXT optimizar (minify, compress, etc)
+* NEXT CMS: Dibujo, miembros.json ala Pillarsed
+* ASK Editorial Vampira Logo
+* ASK Separadores: Spotify, Youtube, Email
+* ----------
+* FIX background-blend-mode
+* FIX CMS autoredirect
+* V2 -------
+* Estalic Search or Simil que sea pillo pa JAMStack
+* Proximamentes...
+* ----------
+* REFACTOR .title .subtitle .paragraph
+* REFACTOR Webpack
+* REFACTOR wow.js
+* REFACTOR revisar colores/margins/paddings
+* REFACTOR svg sprites cleanup que queden solos los que necesito
+* REFACTOR Bajate la App desktop meterle un wraper pal margin-x xq harcodeado queda feo en transicion
+* REFACTOR Fix hardcodeado <img class="w-72" src="/static/images/invasion-indecisa-flyer.png" alt="">
+* REFACTOR Sacar alpine.js
+* REFACTOR alt="", aria-hidden="true"
+* REFACTOR Des-harcodear Links y mejor site.json
+* REFACTOR customs de tailwind.css -> tailwind.config.js
