@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 
-<head>
-  <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-  <link href="https://fonts.googleapis.com/css?family=Barlow Condensed" rel="stylesheet">
-  <link rel="stylesheet" href="/tailwind.css" />
-  <script src="/alpine.js" defer></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <!--<script src="debug.js" defer></script>-->
-  <style>
-    *:not(path):not(g):not(section) {
-      outline: solid 1px #4AF626 !important;
-    }
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link href="https://fonts.googleapis.com/css?family=Barlow Condensed" rel="stylesheet">
+    <link href="/tailwind.css"/ rel="stylesheet">
+    <script src="/alpine.js" defer></script>
+    <link href="/static/debug.css"/ rel="stylesheet">
+  </head>
 
-    section {
-      outline: dashed 1px red !important;
-    }
-  </style>
-</head>
-
-<body style="background-image: linear-gradient(#000000, #00355A);">
-  {% include _header.html %}
-  {{ content }}
-  {% include _footer.html %}
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+  <body style="background-image: linear-gradient(#000000, #00355A);"
+        x-data="{ contact: false, menu: false }"
+        @keydown.escape="contact = false; menu = false;">
+    <main>
+    {% include _header.html %}
+    {{ content }}
+    {% include _footer.html %}
+    </main>
+    {% include _modal-menu.html %}
+    {% include _modal-contact.html %}
+    <script>
+      if (window.netlifyIdentity) {
+        window
+          .netlifyIdentity
+          .on("init", user => {
+            if (!user) {
+              window
+                .netlifyIdentity
+                .on("login", () => {
+                  document.location.href = "/admin/";
+                });
+            }
           });
-        }
-      });
-    }
-  </script>
-</body>
+      }
+    </script>
+  </body>
 
 </html>

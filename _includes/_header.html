@@ -1,32 +1,28 @@
-<header class="absolute z-50 w-full p-4 m-auto" x-data="{ isOpen: false }">
-  <!-- Bar -->
-  <div class="flex items-center justify-between max-w-screen-lg px-4 m-auto">
-    <!-- Logo -->
-    <div class="flex items-center justify-center gap-5 m-2">
-      <a href="/">
-        <img class="h-5" src="/static/images/logo-light.png" alt="">
-      </a>
+<!-- Nav Bar -->
+<header class="absolute z-10 w-full">
+  <div class="p-4 m-auto">
+    <div class="flex items-center justify-between max-w-screen-lg px-4 m-auto">
+      <!-- Logo -->
+      <div class="flex items-center justify-center gap-5 m-2">
+        <a href="/">
+          <img class="h-5" src="/static/images/logo-light.png" alt="">
+        </a>
+      </div>
+      <!-- Burger Mobile -->
+      <button class="md:hidden" @click="menu = !menu" type="button">
+        <svg class="w-5 h-5">
+          <use x-show="!menu" xlink:href="/static/sprites/solid.svg#bars"></use>
+          <use x-show="menu" xlink:href="/static/sprites/solid.svg#times"></use>
+        </svg>
+      </button>
+      <!-- Nav Desktop -->
+      <nav class="items-center justify-between hidden md:flex gap-y-4 gap-x-8">
+        <a href="/" class="text-xl font-semibold uppercase">Home</a>
+        <a href="/blog" class="text-xl font-semibold uppercase">Blog</a>
+        <a href="#contact" class="text-xl font-semibold uppercase">Contact</a>
+      </nav>
     </div>
-    <!-- Burger Mobile -->
-    <button class="md:hidden" @click="isOpen = !isOpen" type="button">
-      <svg class="w-5 h-5">
-        <use x-show="!isOpen" xlink:href="/static/sprites/solid.svg#bars"></use>
-        <use x-show="isOpen" xlink:href="/static/sprites/solid.svg#times"></use>
-      </svg>
-    </button>
-    <!-- Nav Desktop -->
-    <nav class="items-center justify-between hidden md:flex gap-y-4 gap-x-8">
-      <a href="/" class="text-xl font-semibold uppercase">Home</a>
-      <a href="/blog" class="text-xl font-semibold uppercase">Blog</a>
-      <a href="#contact" class="text-xl font-semibold uppercase">Contact</a>
-    </nav>
   </div>
-  <!-- Nav Mobile -->
-  <nav x-show="isOpen" class="flex flex-col items-center justify-between mt-8 gap-y-4 gap-x-8">
-    <a href="/" class="text-xl font-semibold uppercase">Home</a>
-    <a href="/blog" class="text-xl font-semibold uppercase">Blog</a>
-    <a href="#contact" class="text-xl font-semibold uppercase">Contact</a>
-  </nav>
 </header>
 
 <!-- Hero -->
@@ -35,7 +31,7 @@
   <div class="flex flex-col items-center justify-center gap-4 bg-center bg-no-repeat bg-cover" style="height: 80vh; background-image: url('/static/images/hero-pattern-bg.png');">
     <h1 class="text-6xl font-bold">We Are Paperpillar</h1>
     <p class="text-xl font-bold">A team of passionate designers and developers from Yogyakarta</p>
-    <button class="px-12 py-4 mt-4 border-2 border-white rounded-full" data-toggle="modal" data-target="#contactModal">
+    <button class="px-12 py-4 mt-4 border-2 border-white rounded-full" @click="contact = !contact" type="button">
       <span>Let's talk!</span>
     </button>
   </div>

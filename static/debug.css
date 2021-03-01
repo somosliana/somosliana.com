@@ -1,0 +1,7 @@
+*:not(path):not(g):not(section) {
+    outline: solid 1px #4AF626 !important;
+  }
+
+  section {
+    outline: dashed 1px red !important;
+  }
