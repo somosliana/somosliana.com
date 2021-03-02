@@ -1,3 +1,69 @@
 ---
 layout: default
 ---
+{% include heros/home.html %}
+
+<!-- What We Do -->
+<section class="flex flex-col items-center max-w-screen-lg gap-12 p-12 mx-auto text-black">
+  <h1 class="text-6xl">What We Do</h1>
+  <div class="grid grid-cols-3 gap-12">
+    {% for item in site.services %}
+    <div class="flex flex-col items-center gap-4 p-4 text-center shadow-2xl">
+      <img class="w-20 rounded-xl" src="/static/images/service-uiux.png">
+      <h2 class="text-xl">{{ item.title }}</h2>
+      <p class="px-8 text-xl">{{ item.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Clients -->
+<section class="flex flex-col items-center max-w-screen-lg gap-12 p-12 mx-auto text-black">
+  <h1 class="text-6xl">Clients</h1>
+  <h2 class="text-xl">We’ve been working with the teams around the world.</h2>
+  <div class="flex items-center gap-6">
+    <div class="flex flex-col gap-6">
+      <img class="w-25 " src="/static/images/hoopsai.png">
+    </div>
+    <div class="flex flex-col gap-6">
+      <img class="w-25 " src="/static/images/agoda.png">
+      <img class="w-25 " src="/static/images/getsafe.png">
+    </div>
+    <div class="flex flex-col gap-6">
+      <img class="w-25 " src="/static/images/grab.png">
+      <img class="w-25 " src="/static/images/crisp.png">
+      <img class="w-25 " src="/static/images/anyleads.png">
+    </div>
+    <div class="flex flex-col gap-6">
+      <img class="w-25 " src="/static/images/teachable.png">
+      <img class="w-25 " src="/static/images/flyr.png">
+    </div>
+    <div class="flex flex-col gap-6">
+      <img class="w-25 " src="/static/images/roger.png">
+    </div>
+  </div>
+</section>
+
+<!-- Our Latest Works -->
+<section class="flex flex-col items-center max-w-screen-lg gap-12 p-12 mx-auto text-black">
+  <h1 class="text-6xl">Our Latest Works</h1>
+  <div class="flex flex-col gap-12">
+    {% for item in projects.projects %}
+    {% if item.latest %}
+    <!-- Card -->
+    <div class="flex shadow-2xl rounded-3xl">
+      <!-- Left -->
+      <div class="flex flex-col items-start justify-around w-1/2 p-12">
+        <div class="flex flex-col items-start justify-center gap-4">
+          <h2 class="text-5xl">{{ item.title }}</h2>
+          <p class="text-2xl">{{ item.tags }}</p>
+        </div>
+        <a class="btn btn-primary" href="{{ item.url }}">View Project</a>
+      </div>
+      <!-- Right -->
+      <img class="w-1/2 {% if item.right %}order-first rounded-l-3xl{% else %}rounded-r-3xl{% endif %}" src="{{ item.square }}">
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

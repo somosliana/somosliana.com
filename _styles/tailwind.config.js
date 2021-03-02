@@ -15,12 +15,14 @@ module.exports = {
       fontFamily: {
         sans: ["Barlow Condensed", ...defaultTheme.fontFamily.sans],
       },
+      colors: require('daisyui/colors'),
     },
   },
   variants: {
     extend: {},
   },
   plugins: [
+    require('daisyui'),
     require("tailwindcss-debug-screens"),
     require("tailwindcss-responsive-embed"),
     require("tailwindcss-aspect-ratio"),

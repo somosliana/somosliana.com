@@ -1,18 +1,51 @@
 {
-  "baseURL": "https://indecisovampiro.com.ar",
-  "title": "Indeciso Vampiro",
-  "google-play": "https://play.google.com/store/apps/details?id=com.app.radiovampira",
-  "youtube": "https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g",
-  "facebook": "https://www.facebook.com/indecisovampiro",
-  "instagram": "https://www.instagram.com/indecisovampiro",
-  "spotify": "https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv",
-  "email": "mailto:indecisovampiro@gmail.com",
-  "navbar": [
-    "Musica",
-    "Audiovisuales",
-    "Editorial",
-    "Encuentros",
-    "Talleres",
-    "Juegos"
+  "services": [
+    {
+      "title": "UI/UX",
+      "description": "Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App",
+      "image": "/static/images/service-uiux.png"
+    },
+    {
+      "title": "Icon/Illustration",
+      "description": "Character Design, Icon Set, Illustration Guide, Illustration Set",
+      "image": "/static/images/service-illustration.png"
+    },
+    {
+      "title": "Branding",
+      "description": "Visual Identity, Stationary Kit, Marketing Materials",
+      "image": "/static/images/service-branding.png"
+    },
+    {
+      "title": "Development",
+      "description": "HTML/CSS, JavaScript Animation, WordPress, Responsive Website",
+      "image": "/static/images/service-development.png"
+    },
+    {
+      "title": "Motion",
+      "description": "2D Animation, UI Motion",
+      "image": "/static/images/service-motion.png"
+    },
+    {
+      "title": "Photography",
+      "description": "Travel Photography, Product Photography",
+      "image": "/static/images/service-photography.png"
+    }
+  ],
+  "social": [
+    {
+      "title": "Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/somosliana"
+    },
+    {
+      "title": "Behance",
+      "icon": "behance",
+      "url": "https://www.behance.net/somosliana"
+    },
+    {
+      "title": "Github",
+      "icon": "github",
+      "url": "https://www.github.com/somosliana"
+    }
   ]
 }

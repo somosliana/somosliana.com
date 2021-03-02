@@ -9,33 +9,15 @@
     <link href="/tailwind.css"/ rel="stylesheet">
     <script src="/alpine.js" defer></script>
     <link href="/static/debug.css"/ rel="stylesheet">
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
   </head>
 
-  <body style="background-image: linear-gradient(#000000, #00355A);"
-        x-data="{ contact: false, menu: false }"
-        @keydown.escape="contact = false; menu = false;">
+  <body>
     <main>
     {% include _header.html %}
     {{ content }}
     {% include _footer.html %}
     </main>
-    {% include _modal-menu.html %}
-    {% include _modal-contact.html %}
-    <script>
-      if (window.netlifyIdentity) {
-        window
-          .netlifyIdentity
-          .on("init", user => {
-            if (!user) {
-              window
-                .netlifyIdentity
-                .on("login", () => {
-                  document.location.href = "/admin/";
-                });
-            }
-          });
-      }
-    </script>
   </body>
 
 </html>
