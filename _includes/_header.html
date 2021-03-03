@@ -1,5 +1,6 @@
 <!-- Nav Bar -->
-<header class="absolute z-10 w-full">
+<header class="absolute z-10 w-full" x-data="{ 'showModal': false }" @keydown.escape="showModal = false" >
+  <!-- Bar -->
   <div class="p-4 m-auto">
     <div class="flex items-center justify-between max-w-screen-lg px-4 m-auto">
       <!-- Logo -->
@@ -9,18 +10,18 @@
         </a>
       </div>
       <!-- Burger Mobile -->
-      <button class="md:hidden" @click="menu = !menu" type="button">
+      <button class="md:hidden" @click="showModal = !showModal" type="button">
         <svg class="w-5 h-5">
-          <use x-show="!menu" xlink:href="/static/sprites/solid.svg#bars"></use>
-          <use x-show="menu" xlink:href="/static/sprites/solid.svg#times"></use>
+          <use xlink:href="/static/sprites/solid.svg#bars"></use>
         </svg>
       </button>
       <!-- Nav Desktop -->
       <nav class="items-center justify-between hidden md:flex gap-y-4 gap-x-8">
         <a href="/" class="btn btn-ghost btn-sm rounded-btn hover:text-content-100">Home</a>
         <a href="/blog" class="btn btn-ghost btn-sm rounded-btn hover:text-content-100">Blog</a>
-        <a href="#contact" class="btn btn-ghost btn-sm rounded-btn hover:text-content-100">Contact</a>
+        <button class="btn btn-ghost btn-sm rounded-btn hover:text-content-100" @click="showContact = !showContact" type="button">Contact</button>
       </nav>
     </div>
   </div>
+  {% include modals/menu.html %}
 </header>
