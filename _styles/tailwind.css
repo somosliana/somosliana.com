@@ -10,3 +10,15 @@ svg {
   @apply fill-current;
 }
 @tailwind utilities;
+
+.bg-gradient-footer {
+  background-image: linear-gradient(
+    to right top,
+    rgb(55, 9, 99),
+    rgb(64, 43, 157),
+    rgb(3, 143, 159)
+  );
+}
+.bg-gradient-hero {
+  background-image: linear-gradient(to bottom right, #c04de2, #340c7f);
+}

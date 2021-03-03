@@ -1,9 +1,11 @@
-- Netlify Deploy
-- Netlify Form
-- Issue
-- Fix Modal bottom
+- Mask Footer/Hero
+- Color de botones
+- Fix Modal
+
+- Issue colores
+- Issue imagenes
 --------------------------
 - Fuente, Btn, H1, h2, etc
-- Markdown Post
-- Flying button
+- Markdown Post -> posts/*.md
+- Flying Envelope Button -> Contact
 - Hero/Footer composition

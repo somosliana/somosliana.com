@@ -56,7 +56,9 @@ layout: default
       <div class="flex flex-col items-start justify-around w-1/2 p-12">
         <div class="flex flex-col items-start justify-center gap-4">
           <h2 class="text-5xl">{{ item.title }}</h2>
-          <p class="text-2xl">{{ item.tags }}</p>
+            {% for t in item.tags %}
+              <div class="uppercase badge badge-secondary badge-lg">{{t}}</div> 
+            {% endfor %}
         </div>
         <a class="btn btn-primary" href="{{ item.url }}">View Project</a>
       </div>

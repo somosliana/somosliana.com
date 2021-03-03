@@ -1,10 +1,10 @@
-<footer style="background-image: linear-gradient(to right top, rgb(55, 9, 99), rgb(64, 43, 157), rgb(3, 143, 159))">
-  <div class="flex flex-col items-center justify-center gap-4 bg-center bg-no-repeat bg-cover" style="height: 80vh; background-image: url('/static/images/hero-pattern-bg.png');">
+<footer class="bg-gradient-footer">
+  <div class="flex flex-col items-center justify-center gap-16 bg-center bg-no-repeat bg-cover" style="height: 80vh; background-image: url('/static/images/hero-pattern-bg.png');">
     <h1 class="text-6xl font-bold">Interested to work with us?</h1>
-    <button class="btn" @click="showContact = !showContact" type="button">Let's talk!</button>
-    <div class="flex items-center justify-center gap-8 mt-12">
+    <button class="btn btn-secondary btn-lg" @click="showContact = !showContact" type="button">Let's talk!</button>
+    <div class="flex items-center justify-center gap-8">
       {% for item in site.social %}
-        <a class="btn btn-circle btn-lg" href="{{ item.url }}" alt="{{ item.title }}">
+        <a class="btn btn-circle btn-lg btn-secondary" href="{{ item.url }}" alt="{{ item.title }}">
           <svg class="w-6 h-6">
             <use xlink:href="/static/sprites/brands.svg#{{ item.icon }}"></use>
           </svg>
