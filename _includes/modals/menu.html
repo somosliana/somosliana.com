@@ -1,5 +1,5 @@
-<div class="fixed top-0 left-0 z-30 w-screen h-screen bg-red-200" x-show="showModal" >
-  <button class="absolute right-0 mt-6 mr-6 " @click="showModal = !showModal" type="button">
+<div class="fixed top-0 left-0 z-30 w-screen h-screen bg-red-200" x-show="showMenu" >
+  <button class="absolute right-0 mt-6 mr-6 " @click="showMenu = !showMenu" type="button">
     <svg class="w-5 h-5">
       <use xlink:href="/static/sprites/solid.svg#times"></use>
     </svg>
@@ -8,6 +8,6 @@
   <nav class="flex flex-col items-center justify-center h-screen gap-y-4 gap-x-8">
     <a href="/" class="btn btn-ghost btn-lg rounded-btn hover:text-content-100">Home</a>
     <a href="/blog" class="btn btn-ghost btn-lg rounded-btn hover:text-content-100">Blog</a>
-    <a href="#contact" class="btn btn-ghost btn-lg rounded-btn hover:text-content-100">Contact</a>
+    <button @click="showContact = !showContact; showMenu = false;" class="btn btn-ghost btn-lg rounded-btn hover:text-content-100"  type="button">Contact</button>
   </nav>
 </div>

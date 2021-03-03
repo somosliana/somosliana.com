@@ -1,18 +1,13 @@
 # TODO
-- Buttons footer
-- Post
-- Titulo
-
-# Features
-- Data: structures with _data/*.yaml files and Netlify CMS
-- Posts: Markdown pages/posts with Tailwind Typography
 - Forms: Netlify Forms Contact
-- Base: 
-    - Navbar, Hero, Footer
-    - Modals: Menu, Contact
-    - Index
-    - 404
-    - Dependencies: Tailwind, Alpine, CMS
+- Fondos png
+
 - Nav routing with Eleventy Nav
+- Posts: Markdown pages/posts with Tailwind Typography
+- Image Processing + Minify
+- Better Responsive layout
+
+# Someday
+- tailwind.css default: btn h1, h2, h3 etc... maybe section footer header
+- Data: structures with _data/*.yaml files and Netlify CMS
 - Paginator
-- Image Processing

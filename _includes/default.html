@@ -8,18 +8,21 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow Condensed" rel="stylesheet">
     <link href="/tailwind.css"/ rel="stylesheet">
     <script src="/alpine.js" defer></script>
-    <link href="/static/debug.css"/ rel="stylesheet">
     <!--
     -->
+    <link href="/static/debug.css"/ rel="stylesheet">
     <link rel="icon" type="image/png" href="/static/images/favicon.png">
   </head>
 
-  <body x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
+  <body 
+    x-data="{ 'showMenu': false, 'showContact': false }"
+    @keydown.escape="showContact = false">
     {% include _header.html %}
     <main>
       {{ content }}
     </main>
     {% include _footer.html %}
+    {% include modals/menu.html %}
     {% include modals/contact.html %}
 
   </body>

@@ -1,5 +1,5 @@
 <!-- Nav Bar -->
-<header class="absolute z-10 w-full" x-data="{ 'showModal': false }" @keydown.escape="showModal = false" >
+<header class="absolute z-10 w-full">
   <!-- Bar -->
   <div class="p-4 m-auto">
     <div class="flex items-center justify-between max-w-screen-lg px-4 m-auto">
@@ -10,7 +10,7 @@
         </a>
       </div>
       <!-- Burger Mobile -->
-      <button class="md:hidden" @click="showModal = !showModal" type="button">
+      <button class="md:hidden" @click="showMenu = !showMenu" type="button">
         <svg class="w-5 h-5">
           <use xlink:href="/static/sprites/solid.svg#bars"></use>
         </svg>
@@ -19,9 +19,9 @@
       <nav class="items-center justify-between hidden md:flex gap-y-4 gap-x-8">
         <a href="/" class="btn btn-ghost btn-sm rounded-btn hover:text-content-100">Home</a>
         <a href="/blog" class="btn btn-ghost btn-sm rounded-btn hover:text-content-100">Blog</a>
-        <button class="btn btn-ghost btn-sm rounded-btn hover:text-content-100" @click="showContact = !showContact" type="button">Contact</button>
+        <button class="btn btn-ghost btn-sm rounded-btn hover:text-content-100" @click="showContact = !showContact; showMenu = false;" type="button">Contact</button>
       </nav>
     </div>
   </div>
-  {% include modals/menu.html %}
+  
 </header>
