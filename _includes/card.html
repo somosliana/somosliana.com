@@ -1,5 +1,7 @@
-<div class="grid grid-rows-2 shadow-2xl md:grid-rows-none md:grid-cols-2 md:max-w-full rounded-3xl">
-  <img class="{% if item.odd %}md:order-last{% endif %}" src="{{ item.image }}">
+<div class="grid grid-rows-2 bg-gray-100 shadow-2xl md:grid-rows-none md:grid-cols-2 md:max-w-screen-md rounded-3xl">
+  <div class="flex items-center justify-center p-4">
+    <img class="{% if item.odd %}md:order-last{% endif %}" src="{{ item.image }}">
+  </div>
   <div class="flex flex-col items-start justify-around p-4 md:p-12">
     <div class="flex flex-col items-start justify-center gap-4">
       <h2 class="text-5xl">{{ item.title }}</h2>
