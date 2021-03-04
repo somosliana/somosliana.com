@@ -1,34 +1,72 @@
 {
+  "clients": [
+    {
+      "title": "Agoda",
+      "image": "/static/images/clients/agoda.png"
+    },
+    {
+      "title": "Anyleads",
+      "image": "/static/images/clients/anyleads.png"
+    },
+    {
+      "title": "Crisp",
+      "image": "/static/images/clients/crisp.png"
+    },
+    {
+      "title": "Flyr",
+      "image": "/static/images/clients/flyr.png"
+    },
+    {
+      "title": "Getsafe",
+      "image": "/static/images/clients/getsafe.png"
+    },
+    {
+      "title": "Grab",
+      "image": "/static/images/clients/grab.png"
+    },
+    {
+      "title": "Hoopsai",
+      "image": "/static/images/clients/hoopsai.png"
+    },
+    {
+      "title": "Roger",
+      "image": "/static/images/clients/roger.png"
+    },
+    {
+      "title": "Teachable",
+      "image": "/static/images/clients/teachable.png"
+    }
+  ],
   "services": [
     {
       "title": "UI/UX",
-      "description": "Websites, Wireframing, Prototipos, Diseño de Alplicaciones",
-      "image": "/static/images/service-uiux.png"
+      "description": "Prototipos, Diseños<br>Websites<br>Wireframing",
+      "image": "/static/vectors/uxui.svg"
     },
     {
       "title": "Desarrollo",
-      "description": "Web App, Mobile App, Responsive Website",
-      "image": "/static/images/service-development.png"
+      "description": "Mobile App<br>Web App<br>Websites",
+      "image": "/static/vectors/development.svg"
     },
     {
       "title": "Branding",
-      "description": "Diseño de Marca, Marketing Digital, Redes Sociales",
-      "image": "/static/images/service-branding.png"
+      "description": "Diseño de Marca<br>Marketing Digital<br>Redes Sociales",
+      "image": "/static/vectors/branding.svg"
     },
     {
       "title": "Iconos/Ilustracion",
-      "description": "Diseño de Personajes, Set de Iconos, Sets de Ilustracion",
-      "image": "/static/images/service-illustration.png"
+      "description": "Sets de Ilustracion<br>Set de Iconos<br>Diseño de Personajes",
+      "image": "/static/vectors/illustration.svg"
     },
     {
       "title": "Animacion",
-      "description": "Animacion 2D, Animacion UI",
-      "image": "/static/images/service-motion.png"
+      "description": "Animacion 2D<br>Animacion UI",
+      "image": "/static/vectors/motion.svg"
     },
     {
       "title": "Fotografia",
-      "description": "Productos, Publicidad",
-      "image": "/static/images/service-photography.png"
+      "description": "Productos<br>Publicidad",
+      "image": "/static/vectors/photography.svg"
     }
   ],
   "social": [

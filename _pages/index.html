@@ -3,35 +3,42 @@ layout: default
 ---
 <!-- Hero -->
 <section class="bg-gradient-hero">
-  <div class="flex flex-col items-center justify-center gap-4 px-4 text-center bg-center bg-no-repeat bg-cover"
-       style="height: 85vh; background-image: url('/static/images/hero-pattern-bg.png');">
-    <h1 class="text-5xl font-bold text-center sm:text-6xl">Somos Liana</h1>
-    <p class="text-xl font-bold">Una agencia de diseño y desarrollo de Argentina</p>
-    <button class="text-xl btn btn-accent btn-wide"
+  <div class="flex flex-col items-center justify-center gap-8 px-4 text-center bg-center bg-no-repeat bg-cover"
+       style="height: 85vh; background-image: url('/static/images/patterns/hero-pattern-bg.png');">
+    <!-- Title -->
+    <h1 class="text-5xl font-bold text-center sm:text-8xl lg:text-9xl">Somos Liana</h1>
+    <!-- Subtitle -->
+    <h2 class="text-xl font-bold">Una agencia de diseño y desarrollo de Argentina</h2>
+    <!-- Button -->
+    <button class="text-xl text-purple-600 bg-white btn btn-accent btn-wide"
             @click="showContact = !showContact"
             type="button">Hablemos!</button>
   </div>
 </section>
 
-<!-- What We Do -->
+<!-- Que Hacemos -->
 <section class="section">
   <!-- Title -->
   <div class="flex flex-col gap-4 text-center">
     <h1 class="text-5xl font-bold text-center sm:text-6xl">¿Que Hacemos?</h1>
   </div>
   <!-- Grid -->
-  <div class="grid grid-cols-2 gap-12 sm:grid-cols-3">
+  <div class="grid items-start justify-center grid-cols-2 gap-12 sm:grid-cols-3">
     {% for item in site.services %}
-      <div class="flex flex-col items-center gap-4 p-4 text-center sm:shadow-2xl">
-        <img class="w-20 rounded-xl" src="/static/images/service-uiux.png">
-        <h2 class="text-xl sm:text-2xl sm:font-bold">{{ item.title }}</h2>
-        <p class="hidden px-8 text-xl sm:inline">{{ item.description }}</p>
+      <div class="flex flex-col items-stretch justify-around max-w-sm text-center">
+        <div class="-my-8 sm:-my-11">
+          <img alt="" src="{{ item.image }}">
+        </div>
+        <div class="flex flex-col items-center justify-center gap-2">
+          <h2 class="text-xl text-center sm:text-2xl sm:font-bold">{{ item.title }}</h2>
+          <h3 class="hidden w-40 text-xl text-gray-500 sm:inline">{{ item.description }}</h3>
+        </div>
       </div>
     {% endfor %}
   </div>
 </section>
 
-<!-- Clients -->
+<!-- Clientes -->
 <section class="section">
   <!-- Title -->
   <div class="flex flex-col gap-4 text-center">
@@ -40,19 +47,13 @@ layout: default
   </div>
   <!-- Grid -->
   <div class="grid items-center justify-center grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-8">
-    <img alt="" src="/static/images/clients/agoda.png">
-    <img alt="" src="/static/images/clients/anyleads.png">
-    <img alt="" src="/static/images/clients/crisp.png">
-    <img alt="" src="/static/images/clients/flyr.png">
-    <img alt="" src="/static/images/clients/getsafe.png">
-    <img alt="" src="/static/images/clients/grab.png">
-    <img alt="" src="/static/images/clients/hoopsai.png">
-    <img alt="" src="/static/images/clients/teachable.png">
-    <img alt="" src="/static/images/clients/roger.png" class="sm:hidden">
+    {% for item in site.clients %}
+      <img alt="{{ item.title }}" src="{{ item.image }}">
+    {% endfor %}
   </div>
 </section>
 
-<!-- Our Latest Works -->
+<!-- Ultimos Trabajos -->
 <section class="section">
   <!-- Title -->
   <div class="flex flex-col gap-4 text-center">
@@ -62,7 +63,26 @@ layout: default
   <div class="flex flex-col gap-12">
     {% for item in projects.projects %}
       {% if item.latest %}
-        {% include card.html %}
+        <div class="grid grid-rows-2 p-8 shadow-2xl md:grid-rows-none md:grid-cols-2 md:max-w-screen-md rounded-3xl">
+          <!-- Image -->
+          <div class="flex items-center justify-center p-4">
+            <img class="{% if item.odd %}md:order-last{% endif %}" src="{{ item.image }}">
+          </div>
+          <!-- Description -->
+          <div class="flex flex-col items-start justify-around gap-12 p-4 border-t-2 md:border-t-0 md:border-l-2 md:p-12 ">
+            <div class="flex flex-col items-start justify-center">
+              <!-- Title -->
+              <h2 class="text-4xl">{{ item.title }}</h2>
+              <!-- Badges -->
+              <div class="flex py-0">
+                {% for t in item.tags %}
+                  <div class="uppercase badge badge-secondary">{{t}}</div>
+                {% endfor %}
+              </div>
+            </div>
+            <a class="w-40 btn btn-primary" href="{{ item.url }}">Ver Proyecto</a>
+          </div>
+        </div>
       {% endif %}
     {% endfor %}
   </div>

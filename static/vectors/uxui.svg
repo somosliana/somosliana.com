@@ -1,0 +1,39 @@
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch-->
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <linearGradient id="ui-linearGradient-2" x1="12.629094%" y1="2.33397313%" x2="117.1836%" y2="130.121595%">
+      <stop stop-color="#9CB3FF" offset="0%"></stop>
+      <stop stop-color="#B0FFE9" offset="100%"></stop>
+    </linearGradient>
+    <circle id="ui-path-3" cx="38.5" cy="38.5" r="38.5"></circle>
+    <rect id="ui-path-5" x="0" y="0" width="27" height="19" rx="2"></rect>
+    <filter id="ui-filter-6" x="-27.8%" y="-13.2%" width="137.0%" height="152.6%" filterUnits="objectBoundingBox">
+      <feOffset dx="-5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feColorMatrix values="0 0 0 0 0.219607843   0 0 0 0 0.37254902   0 0 0 0 0.623529412  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+    </filter>
+  </defs>
+  <g id="UI-Object-Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="uiObject" transform="translate(62.000000, 62.000000)">
+      <mask id="ui-mask-4" fill="white">
+        <use xlink:href="#ui-path-3"></use>
+      </mask>
+      <use id="uiObjectBg" fill="url(#ui-linearGradient-2)" xlink:href="#ui-path-3"></use>
+      <g id="uiObjectDesktop" mask="url(#ui-mask-4)">
+        <g transform="translate(26.000000, 29.000000)">
+          <g id="ui-Rectangle-14" fill="none">
+            <use fill="black" fill-opacity="1" filter="url(#ui-filter-6)" xlink:href="#ui-path-5"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#ui-path-5"></use>
+          </g>
+          <path id="ui-Rectangle-14-Copy-2" d="M2,0 L25,0 C26.1045695,-2.02906125e-16 27,0.8954305 27,2 L27,5 L0,5 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" fill="#D6E5FF" fill-rule="evenodd"></path>
+        </g>
+      </g>
+      <g id="uiObjectPhone" mask="url(#ui-mask-4)" data-svg-origin="40 23" transform="matrix(1,0,0,1,0,0)">
+        <g transform="translate(40.000000, 23.000000)">
+          <rect id="ui-Rectangle-14-Copy" fill="#4C82DE" x="0" y="0" width="17" height="20" rx="2"></rect>
+          <circle id="Oval-17" fill="#FFFFFF" cx="8.5" cy="15.5" r="1.5"></circle>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

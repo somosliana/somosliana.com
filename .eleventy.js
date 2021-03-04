@@ -1,16 +1,20 @@
 const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("_site/tailwind.css");
-
+  // Tailwind
+  eleventyConfig.addWatchTarget("_site/static/tailwind.css");
+  
+  // Alpine
   eleventyConfig.addPassthroughCopy({
-    "node_modules/alpinejs/dist/alpine.js": "alpine.js",
+    "node_modules/alpinejs/dist/alpine.js": "static/alpine.js",
   });
-
+  
+  // Sprites
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fortawesome/fontawesome-free/sprites": "static/sprites",
   });
 
+  // Static
   eleventyConfig.addPassthroughCopy("static");
 
   // 404 support in `eleventy serve`

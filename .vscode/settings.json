@@ -2,7 +2,7 @@
   "files.exclude": {
     "**/.vscode": true,
     "**/node_modules": true,
-    "**/_site": true,
+    "**/_site": false,
     "**/package-lock.json": true
   }
 }

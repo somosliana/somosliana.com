@@ -1,0 +1,32 @@
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch-->
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <linearGradient id="anim-linearGradient-2" x1="1.79567921%" y1="-11.5959074%" x2="100%" y2="100%">
+      <stop stop-color="#FFAF73" offset="0%"></stop>
+      <stop stop-color="#FFFECC" offset="100%"></stop>
+    </linearGradient>
+    <rect id="anim-path-3" x="0" y="0" width="23" height="23" rx="4"></rect>
+    <filter id="anim-filter-4" x="-32.6%" y="-10.9%" width="143.5%" height="143.5%" filterUnits="objectBoundingBox">
+      <feOffset dx="-5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feColorMatrix values="0 0 0 0 0.730282738   0 0 0 0 0.448360217   0 0 0 0 0.188405685  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+    </filter>
+  </defs>
+  <g id="Anim-Object-Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="animObject" transform="translate(62.000000, 62.000000)">
+      <circle id="animObjectBg" fill="url(#anim-linearGradient-2)" cx="38.5" cy="38.5" r="38.5"></circle>
+      <g id="animObjectFrame" transform="translate(27.000000, 27.000000)">
+        <g id="anim-Rectangle-24">
+          <use fill="black" fill-opacity="1" filter="url(#anim-filter-4)" xlink:href="#anim-path-3"></use>
+          <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#anim-path-3"></use>
+        </g>
+        <path id="anim-Rectangle-24-Copy-2" d="M4,-5.42101086e-20 L19,0 C21.209139,-4.05816873e-16 23,1.790861 23,4 L23,5 L0,5 L0,4 C-2.705415e-16,1.790861 1.790861,4.05816873e-16 4,0 Z" fill="#FFF3E5"></path>
+        <path id="anim-Rectangle-24-Copy-3" d="M4,18 L19,18 C21.209139,18 23,19.790861 23,22 L23,23 L0,23 L0,22 C-2.705415e-16,19.790861 1.790861,18 4,18 Z" fill="#FFF3E5" transform="translate(11.500000, 20.500000) scale(1, -1) translate(-11.500000, -20.500000) "></path>
+      </g>
+      <g id="animObjectPlay" transform="matrix(-1.25,0,0,-1.25,60.5,45.5)" data-svg-origin="10 10" style="transform-origin: 0px 0px 0px;">
+        <circle id="anim-Oval-21" fill="#FF9147" cx="10" cy="10" r="10"></circle>
+        <path id="anim-Path-71" d="M8,8.000049 L8,12.5614909 C8,13.1137757 8.44771525,13.5614909 9,13.5614909 C9.22090737,13.5614909 9.43559748,13.4883431 9.61055102,13.3534679 L12.5689907,11.0727469 C13.0063875,10.7355489 13.0876146,10.1076157 12.7504166,9.67021894 C12.6979826,9.60220412 12.6370055,9.54122704 12.5689907,9.48879304 L9.61055102,7.20807208 C9.17315425,6.87087406 8.5452211,6.9521012 8.20802308,7.38949798 C8.07314785,7.56445152 8,7.77914163 8,8.000049 Z" fill="#FFFFFF"></path>
+      </g>
+    </g>
+  </g>
+</svg>

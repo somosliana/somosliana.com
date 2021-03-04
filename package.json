@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "start": "eleventy --serve & postcss _styles/tailwind.css --output _site/tailwind.css --config _styles/postcss.config.js --watch",
-    "build": "eleventy && NODE_ENV=production postcss _styles/tailwind.css -o _site/tailwind.css"
+    "start": "eleventy --serve & postcss _styles/tailwind.css --output _site/static/tailwind.css --config _styles/postcss.config.js --watch",
+    "build": "eleventy && NODE_ENV=production postcss _styles/tailwind.css -o _site/static/tailwind.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",

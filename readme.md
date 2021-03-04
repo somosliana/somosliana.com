@@ -1,24 +1,15 @@
-# Config
-- .editorconfig, prettier
-- Markdowns
-- CMS
-
 # TODO
-- site.json["clients"]
 - Flying Envelope Button -> Contact
-- Minify: Vectors
+- Fix Modal
+- Fuente
+## Try
+- Try Mask Footer/Hero
+- Try {% if item.right %}sm:order-last{% endif %}
 
 # Valencho
 - /static/images/logo.png
 - /static/images/favicon.png
-- Colores: https://daisy.js.org/docs/add-themes
-- Me haces las de `_data/projects.json` mas facheras.
+- Theme: https://daisy.js.org/docs/add-themes
+## Projects
+- Me haces las de `_data/projects.json['image']` mas facheras.
 - Dribble -> `_data/projects.json`
-
-# Someday
-- Fix Modal
----
-- `<img class="{% if item.right %}sm:order-last{% endif %}" src="{{ item.square }}">`
-- Mask Footer/Hero
-- **WAIT** Valencho Colores + Defaults (H1, Fonts, Section)
-

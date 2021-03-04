@@ -1,0 +1,31 @@
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch-->
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <linearGradient id="linearGradient-2" x1="83.6648309%" y1="100%" x2="-20.4912617%" y2="-14.1158266%">
+      <stop stop-color="#E7D1FF" offset="0%"></stop>
+      <stop stop-color="#8383EF" offset="100%"></stop>
+    </linearGradient>
+    <path id="path-3" d="M10.5,0 C16.2989899,-1.06525716e-15 21,4.70101013 21,10.5 L21,24 C21,25.1045695 20.1045695,26 19,26 L2,26 C0.8954305,26 1.3527075e-16,25.1045695 0,24 L0,10.5 C-7.10171439e-16,4.70101013 4.70101013,1.06525716e-15 10.5,0 Z M7,15 C8.65685425,15 10,13.6568542 10,12 C10,10.3431458 8.65685425,9 7,9 C5.34314575,9 4,10.3431458 4,12 C4,13.6568542 5.34314575,15 7,15 Z M14,15 C15.6568542,15 17,13.6568542 17,12 C17,10.3431458 15.6568542,9 14,9 C12.3431458,9 11,10.3431458 11,12 C11,13.6568542 12.3431458,15 14,15 Z"></path>
+    <filter id="filter-4" x="-35.7%" y="-9.6%" width="147.6%" height="138.5%" filterUnits="objectBoundingBox">
+      <feOffset dx="-5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feColorMatrix values="0 0 0 0 0.356862745   0 0 0 0 0.31372549   0 0 0 0 0.760784314  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+    </filter>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="illusObject" transform="translate(62.000000, 62.000000)">
+      <circle id="illusObjectBg" fill="url(#linearGradient-2)" cx="38.5" cy="38.5" r="38.5"></circle>
+      <g id="illusObjectSpooky" transform="matrix(1,0,0,1,26,22)" data-svg-origin="-8.046303500163889e-32 -1.8104184638610277e-31">
+        <g id="Combined-Shape">
+          <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+          <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+        </g>
+        <path id="Rectangle-25" d="M0,21 L21,21 L21,24 C21,25.1045695 20.1045695,26 19,26 L2,26 C0.8954305,26 1.3527075e-16,25.1045695 0,24 L0,21 Z" fill="#F0EDFF"></path>
+      </g>
+      <g id="illusObjectGhost" transform="translate(41.000000, 30.000000)">
+        <path id="Rectangle-23" d="M8.5,0 L8.5,0 C13.1944204,-8.62351033e-16 17,3.80557963 17,8.5 L17,19 C17,20.1045695 16.1045695,21 15,21 L2,21 C0.8954305,21 1.3527075e-16,20.1045695 0,19 L0,8.5 C-5.74900688e-16,3.80557963 3.80557963,8.62351033e-16 8.5,0 Z" fill="#7567DB"></path>
+        <path id="Oval-19" d="M5,11 C5,13.209139 6.56700338,15 8.5,15 C10.4329966,15 12,13.209139 12,11" stroke="#C4B6F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch-->
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <linearGradient id="brand-linearGradient-2" x1="0%" y1="0%" x2="80.2154694%" y2="100%">
+      <stop stop-color="#FF8989" offset="0%"></stop>
+      <stop stop-color="#FFDDC5" offset="100%"></stop>
+    </linearGradient>
+    <rect id="brand-path-3" x="0" y="0" width="23" height="23" rx="4"></rect>
+    <filter id="brand-filter-4" x="-32.6%" y="-10.9%" width="143.5%" height="143.5%" filterUnits="objectBoundingBox">
+      <feOffset dx="-5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feColorMatrix values="0 0 0 0 0.809390944   0 0 0 0 0.273807347   0 0 0 0 0.247218091  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+    </filter>
+  </defs>
+  <g id="Brand-Object-Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="brandObject" transform="translate(62.000000, 62.000000)">
+      <circle id="brandObjectBg" fill="url(#brand-linearGradient-2)" cx="38.5" cy="38.5" r="38.5"></circle>
+      <g id="brandObjectFrame" transform="translate(27.000000, 27.000000)">
+        <g id="brand-Rectangle-24">
+          <use fill="black" fill-opacity="1" filter="url(#brand-filter-4)" xlink:href="#brand-path-3"></use>
+          <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#brand-path-3"></use>
+        </g>
+        <rect id="brand-Rectangle-24-Copy" fill="#FFE2E0" x="5" y="5" width="13" height="13" rx="4"></rect>
+      </g>
+      <text id="brandObjectText" font-family="Montserrat-Black, Montserrat" font-size="24" font-weight="700" letter-spacing="1.255385" fill="#E86A63" data-svg-origin="45.420000076293945 32.59999942779541" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0.0258333683013916,0.02499985694885254)">
+        <tspan x="36" y="41">A</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
