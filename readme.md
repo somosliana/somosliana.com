@@ -1,20 +1,21 @@
 # TODO
-- Contenido
+- Card: Global y detalles max wide
+- Que Hacemos Icons
 - Align/Spacing Better Responsive layout
-- Fix Modal
+
 
 # Valencho
 - /static/images/logo.png
 - /static/images/favicon.png
-- /_data/projects.json: logo, square, wide
 - Colores: https://daisy.js.org/docs/add-themes
-- Drible y append a project
-- Footer: Hero & Footer bg-*-png
+- Me haces las de `_data/projects.json` mas facheras.
+- Dribble -> `_data/projects.json`
 
 # Someday
+- Flying Envelope Button -> Contact
+- Fix Modal
 - Fix 
 `<img class="{% if item.right %}sm:order-last{% endif %}" src="{{ item.square }}">`
-- Flying Envelope Button -> Contact
 - Mask Footer/Hero
 - Refactor tailwind Fuente, Btn, H1, h2, section, etc.
 - **WAIT** Valencho Colores
