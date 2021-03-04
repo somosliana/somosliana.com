@@ -1,8 +1,12 @@
-# TODO
-- Card: Global y detalles max wide
-- Que Hacemos Icons
-- Align/Spacing Better Responsive layout
+# Config
+- .editorconfig, prettier
+- Markdowns
+- CMS
 
+# TODO
+- site.json["clients"]
+- Flying Envelope Button -> Contact
+- Minify: Vectors
 
 # Valencho
 - /static/images/logo.png
@@ -12,11 +16,9 @@
 - Dribble -> `_data/projects.json`
 
 # Someday
-- Flying Envelope Button -> Contact
 - Fix Modal
-- Fix 
-`<img class="{% if item.right %}sm:order-last{% endif %}" src="{{ item.square }}">`
+---
+- `<img class="{% if item.right %}sm:order-last{% endif %}" src="{{ item.square }}">`
 - Mask Footer/Hero
-- Refactor tailwind Fuente, Btn, H1, h2, section, etc.
-- **WAIT** Valencho Colores
+- **WAIT** Valencho Colores + Defaults (H1, Fonts, Section)
 
