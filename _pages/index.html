@@ -5,22 +5,26 @@ layout: default
 <section class="bg-gradient-hero">
   <div class="flex flex-col items-center justify-center gap-4 px-4 text-center bg-center bg-no-repeat bg-cover"
        style="height: 85vh; background-image: url('/static/images/hero-pattern-bg.png');">
-    <h1 class="text-6xl font-bold">We Are Paperpillar</h1>
-    <p class="text-xl font-bold">A team of passionate designers and developers from Yogyakarta</p>
-    <button class="text-xl btn btn-accent btn-wide" @click="showContact = !showContact" type="button">Let's talk!</button>
+    <h1 class="text-5xl font-bold text-center sm:text-6xl">Somos Liana</h1>
+    <p class="text-xl font-bold">Una agencia de diseño y desarrollo de Argentina</p>
+    <button class="text-xl btn btn-accent btn-wide"
+            @click="showContact = !showContact"
+            type="button">Hablemos!</button>
   </div>
 </section>
 
 <!-- What We Do -->
-<section class="flex flex-col items-center max-w-screen-lg gap-12 p-12 mx-auto text-black">
+<section class="section">
   <!-- Title -->
-  <h1 class="text-6xl">What We Do</h1>
+  <div class="flex flex-col gap-4 text-center">
+    <h1 class="text-5xl font-bold text-center sm:text-6xl">¿Que Hacemos?</h1>
+  </div>
   <!-- Grid -->
   <div class="grid grid-cols-2 gap-12 sm:grid-cols-3">
     {% for item in site.services %}
-      <div class="flex flex-col items-center gap-4 p-4 text-center shadow-2xl">
+      <div class="flex flex-col items-center gap-4 p-4 text-center sm:shadow-2xl">
         <img class="w-20 rounded-xl" src="/static/images/service-uiux.png">
-        <h2 class="text-xl">{{ item.title }}</h2>
+        <h2 class="text-xl sm:text-2xl sm:font-bold">{{ item.title }}</h2>
         <p class="hidden px-8 text-xl sm:inline">{{ item.description }}</p>
       </div>
     {% endfor %}
@@ -28,52 +32,46 @@ layout: default
 </section>
 
 <!-- Clients -->
-<section class="flex flex-col items-center max-w-screen-lg gap-12 p-12 mx-auto text-black">
+<section class="section">
   <!-- Title -->
-  <h1 class="text-6xl">Clients</h1>
-  <h2 class="text-xl">We’ve been working with the teams around the world.</h2>
+  <div class="flex flex-col gap-4 text-center">
+    <h1 class="text-5xl font-bold text-center sm:text-6xl">Clientes</h1>
+    <h2 class="text-xl">Trabajamos con equipos del resto del mundo.</h2>
+  </div>
   <!-- Grid -->
-  <div class="flex items-center gap-12 sm:gap-20">
-    <div class="flex-col hidden gap-12 sm:gap-20 sm:flex">
-      <img class="w-25 " src="/static/images/hoopsai.png">
-    </div>
-    <div class="flex flex-col gap-12 sm:gap-20">
-      <img class="w-25 " src="/static/images/agoda.png">
-      <img class="w-25 " src="/static/images/getsafe.png">
-    </div>
-    <div class="flex flex-col gap-12 sm:gap-20">
-      <img class="w-25 " src="/static/images/grab.png">
-      <img class="w-25 " src="/static/images/crisp.png">
-      <img class="w-25 " src="/static/images/anyleads.png">
-    </div>
-    <div class="flex flex-col gap-12 sm:gap-20">
-      <img class="w-25 " src="/static/images/teachable.png">
-      <img class="w-25 " src="/static/images/flyr.png">
-    </div>
-    <div class="flex-col hidden gap-12 sm:gap-20 sm:flex">
-      <img class="w-25 " src="/static/images/roger.png">
-    </div>
+  <div class="grid items-center justify-center grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-8">
+    <img alt="" src="/static/images/clients/agoda.png">
+    <img alt="" src="/static/images/clients/anyleads.png">
+    <img alt="" src="/static/images/clients/crisp.png">
+    <img alt="" src="/static/images/clients/flyr.png">
+    <img alt="" src="/static/images/clients/getsafe.png">
+    <img alt="" src="/static/images/clients/grab.png">
+    <img alt="" src="/static/images/clients/hoopsai.png">
+    <img alt="" src="/static/images/clients/teachable.png">
+    <img alt="" src="/static/images/clients/roger.png" class="sm:hidden">
   </div>
 </section>
 
 <!-- Our Latest Works -->
-<section class="flex flex-col items-center max-w-screen-lg gap-12 p-12 mx-auto text-black">
+<section class="section">
   <!-- Title -->
-  <h1 class="text-6xl">Our Latest Works</h1>
+  <div class="flex flex-col gap-4 text-center">
+    <h1 class="text-5xl font-bold text-center sm:text-6xl">Ultimos Trabajos</h1>
+  </div>
   <!-- Grid -->
   <div class="flex flex-col gap-12">
     {% for item in projects.projects %}
       {% if item.latest %}
-        <div class="grid max-w-xs grid-rows-2 shadow-2xl sm:grid-rows-none sm:grid-cols-2 sm:max-w-full rounded-3xl">
-          <img class="{% if item.right %}sm:order-last{% endif %}" src="{{ item.square }}">
-          <div class="flex flex-col items-start justify-around p-4 sm:p-12">
+        <div class="grid grid-rows-2 shadow-2xl md:grid-rows-none md:grid-cols-2 md:max-w-full rounded-3xl">
+          <img class="{% if item.odd %}md:order-last{% endif %}" src="{{ item.image }}">
+          <div class="flex flex-col items-start justify-around p-4 md:p-12">
             <div class="flex flex-col items-start justify-center gap-4">
               <h2 class="text-5xl">{{ item.title }}</h2>
               {% for t in item.tags %}
                 <div class="uppercase badge badge-secondary badge-lg">{{t}}</div>
               {% endfor %}
             </div>
-            <a class="btn btn-primary" href="{{ item.url }}">View Project</a>
+            <a class="btn btn-primary" href="{{ item.url }}">Ver Proyecto</a>
           </div>
         </div>
       {% endif %}

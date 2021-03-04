@@ -9,14 +9,15 @@
     <link href="/tailwind.css"/ rel="stylesheet">
     <script src="/alpine.js" defer></script>
     <link rel="icon" type="image/png" href="/static/images/favicon.png">
-    <!--
     <link href="/static/debug.css"/ rel="stylesheet">
+    <!--
     -->
   </head>
 
   <body 
+    class="debug-screens"
     x-data="{ 'showMenu': false, 'showContact': false }"
-    @keydown.escape="showContact = false">
+    @keydown.escape="showMenu = false; showContact = false">
     {% include _header.html %}
     <main>
       {{ content }}

@@ -2,49 +2,37 @@
   "projects": [
     {
       "title": "Indeciso Vampiro",
-      "logo": "/static/images/indecisovampiro-logo.png",
-      "image": "/static/images/indecisovampiro.png",
+      "image": "/static/images/wide.png",
       "url": "https://indecisovampiro.com.ar",
       "tags": ["site"],
-      "latest": true,
-      "square": "/static/images/calendar-works.jpg",
-      "right": true
+      "latest": true
     },
     {
       "title": "Cintia Susñar",
-      "logo": "/static/images/cintiasusnar-logo.png",
-      "image": "/static/images/cintiasusnar.png",
+      "image": "/static/images/wide.png",
       "url": "https://cintiasusñar.com",
       "tags": ["site"],
       "latest": true,
-      "square": "/static/images/calendar-works.jpg",
-      "right": false
+      "odd": true
     },
     {
       "title": "San Jose",
-      "logo": "/static/images/sanjose-logo.png",
-      "image": "/static/images/sanjose.png",
+      "image": "/static/images/wide.png",
       "url": "https://seguridadhigienetdf.com",
       "tags": ["site"],
-      "latest": true,
-      "square": "/static/images/calendar-works.jpg",
-      "right": true
+      "latest": true
     },
     {
       "title": "CREAM",
-      "logo": "/static/images/cream-logo.png",
-      "image": "/static/images/cream.png",
+      "image": "/static/images/wide.png",
       "url": "https://barbershopcream.com",
-      "tags": ["site"],
-      "latest": false
+      "tags": ["site"]
     },
     {
       "title": "Pillars",
-      "logo": "/static/images/pillars-logo.png",
-      "image": "/static/images/pillars.png",
+      "image": "/static/images/wide.png",
       "url": "https://pillarsed.com",
-      "tags": ["site"],
-      "latest": false
+      "tags": ["site"]
     }
   ]
 }

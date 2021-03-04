@@ -2,32 +2,32 @@
   "services": [
     {
       "title": "UI/UX",
-      "description": "Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App",
+      "description": "Diseño y Prototipo de Interfaz",
       "image": "/static/images/service-uiux.png"
     },
     {
-      "title": "Icon/Illustration",
-      "description": "Character Design, Icon Set, Illustration Guide, Illustration Set",
-      "image": "/static/images/service-illustration.png"
-    },
-    {
-      "title": "Branding",
-      "description": "Visual Identity, Stationary Kit, Marketing Materials",
-      "image": "/static/images/service-branding.png"
-    },
-    {
-      "title": "Development",
-      "description": "HTML/CSS, JavaScript Animation, WordPress, Responsive Website",
+      "title": "Desarrollo",
+      "description": "Web App, Mobile App, Responsive Website",
       "image": "/static/images/service-development.png"
     },
     {
-      "title": "Motion",
-      "description": "2D Animation, UI Motion",
+      "title": "Branding",
+      "description": "Diseño de Marca, Marketing Digital, Redes Sociales",
+      "image": "/static/images/service-branding.png"
+    },
+    {
+      "title": "Iconos/Ilustracion",
+      "description": "Diseño de Personajes, Set de Iconos, Sets de Ilustracion",
+      "image": "/static/images/service-illustration.png"
+    },
+    {
+      "title": "Animacion",
+      "description": "Animacion 2D, Animacion UI",
       "image": "/static/images/service-motion.png"
     },
     {
-      "title": "Photography",
-      "description": "Travel Photography, Product Photography",
+      "title": "Fotografia",
+      "description": "Productos, Publicidad",
       "image": "/static/images/service-photography.png"
     }
   ],

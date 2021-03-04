@@ -9,14 +9,10 @@
     "@fortawesome/fontawesome-free": "^5.15.2",
     "alpinejs": "^2.8.0",
     "autoprefixer": "^10.2.3",
+    "daisyui": "^0.13.3",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.2",
-    "tailwindcss-aspect-ratio": "^3.0.0",
-    "tailwindcss-debug-screens": "^1.1.0",
-    "tailwindcss-responsive-embed": "^1.0.0"
-  },
-  "dependencies": {
-    "daisyui": "^0.12.0"
+    "tailwindcss-debug-screens": "^1.1.0"
   }
 }
