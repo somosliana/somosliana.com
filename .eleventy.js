@@ -2,7 +2,7 @@ const fs = require("fs");
 
 module.exports = function (config) {
   // Tailwind
-  config.addWatchTarget("_site/static/tailwind.css");
+  config.addWatchTarget("public/static/tailwind.css");
   
   // Alpine
   config.addPassthroughCopy({
@@ -16,7 +16,7 @@ module.exports = function (config) {
   config.setBrowserSyncConfig({
     callbacks: {
      ready: function(err, bs) {
-       const content_404 = fs.readFileSync('_site/404.html');
+       const content_404 = fs.readFileSync('public/404.html');
        bs.addMiddleware("*", (req, res) => {
         // Provides the 404 content without redirect.
         res.write(content_404);
@@ -30,6 +30,7 @@ module.exports = function (config) {
     dir: {
       input: "_pages",
       includes: "../_includes",
+      output: "public",
       data: "../_data",
     },
   };
