@@ -1,24 +1,19 @@
 const fs = require("fs");
 
-module.exports = function (eleventyConfig) {
+module.exports = function (config) {
   // Tailwind
-  eleventyConfig.addWatchTarget("_site/static/tailwind.css");
+  config.addWatchTarget("_site/static/tailwind.css");
   
   // Alpine
-  eleventyConfig.addPassthroughCopy({
+  config.addPassthroughCopy({
     "node_modules/alpinejs/dist/alpine.js": "static/alpine.js",
-  });
-  
-  // Sprites
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@fortawesome/fontawesome-free/sprites": "static/sprites",
   });
 
   // Static
-  eleventyConfig.addPassthroughCopy("static");
+  config.addPassthroughCopy("static");
 
   // 404 support in `eleventy serve`
-  eleventyConfig.setBrowserSyncConfig({
+  config.setBrowserSyncConfig({
     callbacks: {
      ready: function(err, bs) {
        const content_404 = fs.readFileSync('_site/404.html');
