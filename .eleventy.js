@@ -28,10 +28,8 @@ module.exports = function (config) {
 
   return {
     dir: {
-      input: "_pages",
-      includes: "../_includes",
-      output: "public",
-      data: "../_data",
+      input: "www",
+      output: "public"
     },
   };
 };
