@@ -10,7 +10,7 @@ module.exports = function (config) {
   });
 
   // Static
-  config.addPassthroughCopy("static");
+  config.addPassthroughCopy("www/static");
 
   // 404 support in `eleventy serve`
   config.setBrowserSyncConfig({

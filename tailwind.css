@@ -30,3 +30,14 @@ svg {
 .bg-gradient-hero {
   background-image: linear-gradient(to bottom right, #c04de2, #340c7f);
 }
+
+.asd {
+  width: 40px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #ef4b6c;
+  transform: translateX(-50%);
+}

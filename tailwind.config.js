@@ -2,12 +2,17 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: 'jit',
-  purge: ["./**/*.html"],
+  purge: [
+    './www/**/*.html',
+    './public/**/*.html',
+  ],
   darkMode: false,
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Barlow Condensed", ...defaultTheme.fontFamily.sans],
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        playfairDisplay:  "'Playfair Display', serif",
+        lora:  "'Lora', serif"
       },
       colors: require('daisyui/colors'),
     },

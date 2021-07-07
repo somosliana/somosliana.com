@@ -1,4 +1,36 @@
 {
+  "services": [
+    {
+      "title": "UI/UX",
+      "description": "Prototipos, Diseños<br>Websites<br>Wireframing",
+      "image": "/static/vectors/uxui.svg"
+    },
+    {
+      "title": "Desarrollo",
+      "description": "Mobile App<br>Web App<br>Websites",
+      "image": "/static/vectors/development.svg"
+    },
+    {
+      "title": "Branding",
+      "description": "Diseño de Marca<br>Marketing Digital<br>Redes Sociales",
+      "image": "/static/vectors/branding.svg"
+    },
+    {
+      "title": "Iconos/Ilustracion",
+      "description": "Sets de Ilustracion<br>Set de Iconos<br>Diseño de Personajes",
+      "image": "/static/vectors/illustration.svg"
+    },
+    {
+      "title": "Animacion",
+      "description": "Animacion 2D<br>Animacion UI",
+      "image": "/static/vectors/motion.svg"
+    },
+    {
+      "title": "Fotografia",
+      "description": "Productos<br>Publicidad",
+      "image": "/static/vectors/photography.svg"
+    }
+  ],
   "clients": [
     {
       "title": "Agoda",
@@ -35,38 +67,6 @@
     {
       "title": "Teachable",
       "image": "/static/images/clients/teachable.png"
-    }
-  ],
-  "services": [
-    {
-      "title": "UI/UX",
-      "description": "Prototipos, Diseños<br>Websites<br>Wireframing",
-      "image": "/static/vectors/uxui.svg"
-    },
-    {
-      "title": "Desarrollo",
-      "description": "Mobile App<br>Web App<br>Websites",
-      "image": "/static/vectors/development.svg"
-    },
-    {
-      "title": "Branding",
-      "description": "Diseño de Marca<br>Marketing Digital<br>Redes Sociales",
-      "image": "/static/vectors/branding.svg"
-    },
-    {
-      "title": "Iconos/Ilustracion",
-      "description": "Sets de Ilustracion<br>Set de Iconos<br>Diseño de Personajes",
-      "image": "/static/vectors/illustration.svg"
-    },
-    {
-      "title": "Animacion",
-      "description": "Animacion 2D<br>Animacion UI",
-      "image": "/static/vectors/motion.svg"
-    },
-    {
-      "title": "Fotografia",
-      "description": "Productos<br>Publicidad",
-      "image": "/static/vectors/photography.svg"
     }
   ],
   "social": [
