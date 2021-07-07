@@ -3,21 +3,6 @@
     {
       "title": "Indeciso Vampiro",
       "image": "/static/images/projects/indecisovampiro.png",
-      "url": "https://indecisovampiro.com.ar/app",
-      "tags": ["app"],
-      "latest": true
-    },
-    {
-      "title": "San Jose: Extintores",
-      "image": "/static/images/projects/cintiasusnar.png",
-      "url": "https://github.com/somosliana/app-extintores",
-      "tags": ["app"],
-      "latest": true,
-      "odd": true
-    },
-    {
-      "title": "Indeciso Vampiro",
-      "image": "/static/images/projects/indecisovampiro.png",
       "url": "https://indecisovampiro.com.ar",
       "tags": ["site"],
       "latest": true
@@ -45,18 +30,6 @@
     },
     {
       "title": "Pillars",
-      "image": "/static/images/projects/pillars.png",
-      "url": "https://pillarsed.com",
-      "tags": ["site"]
-    },
-    {
-      "title": "Papelera Tauro",
-      "image": "/static/images/projects/pillars.png",
-      "url": "https://pillarsed.com",
-      "tags": ["site"]
-    },
-    {
-      "title": "Instituto EXCEL",
       "image": "/static/images/projects/pillars.png",
       "url": "https://pillarsed.com",
       "tags": ["site"]

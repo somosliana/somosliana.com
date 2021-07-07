@@ -75,14 +75,19 @@
   ],
   "social": [
     {
-      "title": "Instagram",
-      "icon": "instagram",
-      "url": "https://www.instagram.com/somosliana"
+      "title": "Email",
+      "icon": "envelope",
+      "url": "mailto:somosliana@pm.me"
     },
     {
       "title": "Github",
       "icon": "github",
       "url": "https://www.github.com/somosliana"
+    },
+    {
+      "title": "Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/somosliana"
     }
   ]
 }
