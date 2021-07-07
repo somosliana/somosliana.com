@@ -67,6 +67,10 @@
     {
       "title": "Teachable",
       "image": "/static/images/clients/teachable.png"
+    },
+    {
+      "title": "Teachable",
+      "image": "/static/images/clients/teachable.png"
     }
   ],
   "social": [
@@ -74,11 +78,6 @@
       "title": "Instagram",
       "icon": "instagram",
       "url": "https://www.instagram.com/somosliana"
-    },
-    {
-      "title": "Behance",
-      "icon": "behance",
-      "url": "https://www.behance.net/somosliana"
     },
     {
       "title": "Github",

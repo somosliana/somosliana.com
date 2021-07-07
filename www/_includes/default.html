@@ -13,13 +13,9 @@
     <link href="/tailwind.css"/ rel="stylesheet">
     <script src="/static/alpine.js" defer></script>
     <link  href="/static/images/favicon.png" rel="icon" type="image/png">
-    <!--
-    <link href="/static/debug.css"/ rel="stylesheet">
-    -->
   </head>
 
-  <body 
-    class="debug-screens"
+  <body
     x-data="{ 'showMenu': false, 'showContact': false }"
     @keydown.escape="showMenu = false; showContact = false">
     {% include _header.html %}
