@@ -1,9 +1,6 @@
 const fs = require("fs");
 
 module.exports = function (config) {
-  // Tailwind
-  config.addWatchTarget("public/static/tailwind.css");
-  
   config.addPassthroughCopy({
     "node_modules/alpinejs/dist/alpine.js": "static/alpine.js",
     "./netlifycms.yml": "./admin/config.yml",
