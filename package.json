@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf public",
-    "start": "npm-run-all --parallel dev:tailwind dev:eleventy dev:netlifycms",
+    "start": "npm-run-all --parallel dev:tailwind dev:eleventy",
     "dev:eleventy": "cross-env NODE_ENV=development eleventy --serve",
     "dev:tailwind" : "npx tailwindcss -i ./tailwind.css -o ./public/tailwind.css --watch",
     "dev:netlifycms": "npx netlify-cms-proxy-server",
