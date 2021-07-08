@@ -10,8 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora" rel="stylesheet">
-    <link href="/tailwind.css"/ rel="stylesheet">
     <link  href="/static/images/favicon.png" rel="icon" type="image/png">
+    <link href="/tailwind.css"/ rel="stylesheet">
+    {% if prism == true %}
+      <link rel="stylesheet" type="text/css" href="/prism-tomorrow.css">
+    {% endif %}
   </head>
 
   <body
@@ -23,7 +26,7 @@
     </main>
     {% include _footer.html %}
     {% include _contact.html %}
-    <script src="/static/alpine.js"></script>
+    <script src="/alpine.js"></script>
     {% if path == "home" %}
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}

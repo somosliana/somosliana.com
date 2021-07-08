@@ -1,45 +1,63 @@
 ---
 layout: default
 ---
+
 <!-- Hero -->
-<section style="background-image: linear-gradient(to right top, rgb(55, 9, 99), rgb(64, 43, 157), rgb(3, 143, 159))">
-    <div class="flex flex-col items-center justify-center gap-4 bg-center bg-no-repeat bg-cover h-[30vh]"
-         style="background-image: url('/static/images/patterns/blog-pattern-bg.png');">
-      <h1 class="text-5xl font-playfairDisplay font-bold text-center sm:text-7xl">Blog</h1>
-    </div>
-  </section>
+<section
+  style="
+    background-image: linear-gradient(
+      to right top,
+      rgb(55, 9, 99),
+      rgb(64, 43, 157),
+      rgb(3, 143, 159)
+    );
+  "
+>
+  <div
+    class="
+      flex flex-col
+      items-center
+      justify-center
+      gap-4
+      bg-center bg-no-repeat bg-cover
+      h-[30vh]
+    "
+    style="background-image: url('/static/images/patterns/blog-pattern-bg.png')"
+  >
+    <h1 class="text-5xl font-playfairDisplay font-bold text-center sm:text-7xl">
+      Blog
+    </h1>
+  </div>
+</section>
 <section class="section">
-    {% for post in collections.post  %}
-        <article class="my-8">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
-                </a>
-            </h2>
-            <p class="text-base leading-6 text-gray-500 mb-3">
-                <time>
-                    {{ post.date | readableDate }}
-                    by
-                    <a>{{ post.data.author }}</a>
+  <div class="max-w-3xl">
+    {% for post in collections.post %}
+    <article class="my-8">
+      <h2 class="font-bold text-3xl text-gray-900 mb-2">
+        <a href="{{ post.url | url }}">
+          {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {%
+          endif %}
+        </a>
+      </h2>
+      <p class="text-base leading-6 text-gray-500 mb-3">
+        <time>
+          {{ post.date | readableDate }} by
+          <a>{{ post.data.author }}</a>
+        </time>
+      </p>
+      {% if post.data.description %}
+      <p class="text-lg text-gray-500 mb-3">{{ post.data.description }}</p>
+      {% endif %}
 
-                </time>
-            </p>
-            {% if post.data.description %}
-                <p class="text-lg text-gray-500 mb-3">
-                    {{ post.data.description }}
-                </p>
-            {% endif %}
-
-            <p>
-                <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
-                    Read more →
-                </a>
-            </p>
-
-        </article>
+      <p>
+        <a
+          href="{{ post.url | url }}"
+          class="text-indigo-500 font-bold text-lg"
+        >
+          Read more →
+        </a>
+      </p>
+    </article>
     {% endfor %}
+  </div>
 </section>
