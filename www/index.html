@@ -12,7 +12,7 @@ path: home
     <h2 class="text-lg font-normal">Una agencia de diseño y desarrollo de Argentina</h2>
     <!-- Button -->
     <button class="text-xl text-purple-600 bg-white btn btn-accent btn-wide uppercase"
-            @click="showContact = true" 
+            @click="showContact = true"
             type="button">Hablemos!</button>
   </div>
 </section>
@@ -72,7 +72,7 @@ path: home
           <img src="{{ item.image }}">
         </div>
         <!-- Description -->
-        <div class="flex flex-col items-start justify-around gap-12 p-4 border-t-2 md:border-t-0 {% if item.odd %}md:border-r-2 md:border-l-0{% endif %} md:border-l-2 md:p-12 ">
+        <div class="flex flex-col items-start justify-around gap-12 p-4 border-t-2 md:border-t-0 {% if item.odd %}md:border-r-2 md:border-l-0{% else %} md:border-l-2{% endif %}  md:p-12 ">
           <div class="flex flex-col items-start justify-center">
             <!-- Title -->
             <h2 class="text-4xl">{{ item.title }}</h2>
