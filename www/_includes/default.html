@@ -24,13 +24,15 @@
     <main>
       {{ content }}
     </main>
-    {% include _footer.html %}
+    {% if path != "404" %}
+      {% include _footer.html %}
+    {% endif %}
     {% include _contact.html %}
+
     <script src="/alpine.js"></script>
     {% if path == "home" %}
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
 
   </body>
-
 </html>

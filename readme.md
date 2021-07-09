@@ -1,6 +1,8 @@
+- Sort .eleventy.js
+- Fix que aparece el modal en refresh pages
+
 # TODO
 - Flying Envelope Button -> Contact
-- Fix Modal
 - Fuente
 ## Try
 - Try Mask Footer/Hero

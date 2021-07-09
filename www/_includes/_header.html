@@ -1,3 +1,22 @@
+<button
+  @click="showContact = !showContact; showMenu = false;"
+  class="
+    btn btn-primary btn-lg
+    rounded-btn
+    hover:text-content-100
+    fixed
+    bottom-5
+    right-5
+    sm:bottom-10
+    sm:right-10
+  "
+  type="button"
+>
+  <svg class="w-5 h-5">
+    <use xlink:href="/static/vectors.svg#envelope"></use>
+  </svg>
+</button>
+
 <!-- Nav Bar -->
 <header class="absolute z-10 w-full">
   <!-- Bar -->
@@ -6,7 +25,7 @@
       <!-- Logo -->
       <div class="flex items-center justify-center gap-5 m-2">
         <a href="/">
-          <img class="h-5" src="/static/images/logo.png" alt="">
+          <img class="h-5" src="/static/images/logo.png" alt="" />
         </a>
       </div>
       <!-- Burger Mobile -->
@@ -17,27 +36,76 @@
       </button>
       <!-- Nav Desktop -->
       <nav class="items-center justify-between hidden md:flex gap-y-4 gap-x-4">
-        <a href="/" class="btn btn-ghost btn-sm rounded-btn hover:text-content-100 text-xs">Inicio</a>
-        <a href="/portfolio" class="btn btn-ghost btn-sm rounded-btn hover:text-content-100 text-xs">Portfolio</a>
-        <button class="btn btn-ghost btn-sm rounded-btn hover:text-content-100 text-xs" 
-          @click="showContact = !showContact; showMenu = false;" type="button">Contacto</button>
+        <a
+          href="/"
+          class="
+            btn btn-ghost btn-sm
+            rounded-btn
+            hover:text-content-100
+            text-xs
+          "
+          >Inicio</a
+        >
+        <a
+          href="/portfolio"
+          class="
+            btn btn-ghost btn-sm
+            rounded-btn
+            hover:text-content-100
+            text-xs
+          "
+          >Portfolio</a
+        >
+        <button
+          class="
+            btn btn-ghost btn-sm
+            rounded-btn
+            hover:text-content-100
+            text-xs
+          "
+          @click="showContact = !showContact; showMenu = false;"
+          type="button"
+        >
+          Contacto
+        </button>
       </nav>
     </div>
   </div>
   <!-- Modal -->
-  <div class="fixed top-0 left-0 z-30 w-screen h-screen text-black bg-white" x-show="showMenu" >
-    <button class="absolute right-0 mt-6 mr-12" @click="showMenu = !showMenu" type="button">
+  <div
+    class="fixed top-0 left-0 z-30 w-screen h-screen text-black bg-white"
+    x-show="showMenu"
+  >
+    <button
+      class="absolute right-0 mt-6 mr-12"
+      @click="showMenu = !showMenu"
+      type="button"
+    >
       <svg class="w-5 h-5">
         <use xlink:href="/static/vectors.svg#times"></use>
       </svg>
     </button>
     <!-- Main -->
-    <nav class="flex flex-col items-center justify-center h-screen gap-y-4 gap-x-8">
-      <a href="/" class="btn btn-ghost btn-lg rounded-btn hover:text-content-100">Inicio</a>
-      <a href="/portfolio" class="btn btn-ghost btn-lg rounded-btn hover:text-content-100">Portfolio</a>
-      <button @click="showContact = !showContact; showMenu = false;"
-    class="btn btn-ghost btn-lg rounded-btn hover:text-content-100"
-    type="button">Contacto</button>
+    <nav
+      class="flex flex-col items-center justify-center h-screen gap-y-4 gap-x-8"
+    >
+      <a
+        href="/"
+        class="btn btn-ghost btn-lg rounded-btn hover:text-content-100"
+        >Inicio</a
+      >
+      <a
+        href="/portfolio"
+        class="btn btn-ghost btn-lg rounded-btn hover:text-content-100"
+        >Portfolio</a
+      >
+      <button
+        @click="showContact = !showContact; showMenu = false;"
+        class="btn btn-ghost btn-lg rounded-btn hover:text-content-100"
+        type="button"
+      >
+        Contacto
+      </button>
     </nav>
   </div>
 </header>
