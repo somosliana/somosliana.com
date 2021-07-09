@@ -4,23 +4,20 @@
       "title": "Indeciso Vampiro",
       "image": "/static/images/projects/indecisovampiro.png",
       "url": "https://indecisovampiro.com.ar",
-      "tags": ["site"],
-      "latest": true
+      "tags": ["site"]
     },
     {
       "title": "Cintia Susñar",
       "image": "/static/images/projects/cintiasusnar.png",
       "url": "https://cintiasusñar.com",
       "tags": ["site"],
-      "latest": true,
       "odd": true
     },
     {
       "title": "San Jose",
       "image": "/static/images/projects/sanjose.png",
       "url": "https://seguridadhigienetdf.com",
-      "tags": ["site"],
-      "latest": true
+      "tags": ["site"]
     },
     {
       "title": "CREAM",
