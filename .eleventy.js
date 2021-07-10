@@ -1,7 +1,7 @@
 const minifyHtml = require('./src/minifyHtml')
 const browsersyncConfig = require('./src/browsersyncConfig')
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const pluginSEO = require("eleventy-plugin-seo");
+//const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 
 const isProduction = process.env.NODE_ENV === 'production'
@@ -14,7 +14,7 @@ module.exports = function (config) {
     './www/static': 'static'
   })
 
-  config.addPlugin(lazyImagesPlugin);
+  //config.addPlugin(lazyImagesPlugin);
   config.addPlugin(pluginSEO, require("./www/_data/seo.json"));
 
   if (isProduction) {
