@@ -2,18 +2,16 @@
 layout: default
 path: home
 ---
+
 <!-- Hero -->
 <section class="bg-gradient-hero">
-  <div class="flex flex-col items-center justify-center gap-8 px-4 text-center bg-center bg-no-repeat bg-cover"
-       style="height: 85vh; background-image: url('/static/images/patterns/hero-pattern-bg.png');">
+  <div class="flex flex-col items-center justify-center gap-8 px-4 text-center bg-center bg-no-repeat bg-cover" style="height: 85vh; background-image: url('/static/images/patterns/hero-pattern-bg.png')">
     <!-- Title -->
     <h1 class="text-5xl font-playfairDisplay font-bold text-center sm:text-7xl">Somos Liana</h1>
     <!-- Subtitle -->
     <h2 class="text-lg font-normal">Una agencia de diseño y desarrollo de Argentina</h2>
     <!-- Button -->
-    <button class="text-xl text-purple-600 bg-white btn btn-accent btn-wide uppercase"
-            @click="showContact = true"
-            type="button">Hablemos!</button>
+    <button class="text-xl text-purple-600 bg-white btn btn-accent btn-wide uppercase" @click="showContact = true" type="button">Hablemos!</button>
   </div>
 </section>
 
@@ -27,15 +25,15 @@ path: home
   <!-- Grid -->
   <div class="grid items-start justify-center grid-cols-2 gap-12 sm:grid-cols-3">
     {% for item in site.services %}
-      <div class="flex flex-col items-stretch justify-around max-w-sm text-center">
-        <div class="-my-8 sm:-my-11">
-          <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
-        </div>
-        <div class="flex flex-col items-center justify-center gap-2">
-          <h2 class="text-xl text-center font-semibold">{{ item.title }}</h2>
-          <h3 class="hidden w-40 text-sm text-gray-500 sm:inline font-lora">{{ item.description }}</h3>
-        </div>
+    <div class="flex flex-col items-stretch justify-around max-w-sm text-center">
+      <div class="-my-8 sm:-my-11">
+        <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" />
       </div>
+      <div class="flex flex-col items-center justify-center gap-2">
+        <h2 class="text-xl text-center font-semibold">{{ item.title }}</h2>
+        <h3 class="hidden w-40 text-sm text-gray-500 sm:inline font-lora">{{ item.description }}</h3>
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>
@@ -51,7 +49,7 @@ path: home
   <!-- Grid -->
   <div class="grid items-center justify-center grid-cols-2 sm:grid-cols-5 gap-14">
     {% for item in site.clients %}
-      <img alt="{{ item.title }}" src="{{ item.image }}" loading="lazy">
+    <img alt="{{ item.title }}" src="{{ item.image }}" loading="lazy" />
     {% endfor %}
   </div>
 </section>
@@ -66,26 +64,26 @@ path: home
   <!-- Grid -->
   <div class="flex flex-col gap-12">
     {% for item in projects.projects limit:3 %}
-      <div class="grid grid-rows-2 p-8 shadow-2xl md:grid-rows-none md:grid-cols-2 md:max-w-screen-md rounded-3xl">
-        <!-- Image -->
-        <div class="flex items-center justify-center p-4 {% if item.odd %}md:order-last{% endif %}">
-          <img alt="{{ item.title }}" src="{{ item.image }}" loading="lazy">
-        </div>
-        <!-- Description -->
-        <div class="flex flex-col items-start justify-around gap-12 p-4 border-t-2 md:border-t-0 {% if item.odd %}md:border-r-2 md:border-l-0{% else %} md:border-l-2{% endif %}  md:p-12 ">
-          <div class="flex flex-col items-start justify-center">
-            <!-- Title -->
-            <h2 class="text-4xl">{{ item.title }}</h2>
-            <!-- Badges -->
-            <div class="flex py-0">
-              {% for t in item.tags %}
-                <div class="uppercase badge badge-secondary">{{t}}</div>
-              {% endfor %}
-            </div>
-          </div>
-          <a class="w-40 btn btn-primary" href="{{ item.url }}">Ver Proyecto</a>
-        </div>
+    <div class="grid grid-rows-2 p-8 shadow-2xl md:grid-rows-none md:grid-cols-2 md:max-w-screen-md rounded-3xl">
+      <!-- Image -->
+      <div class="flex items-center justify-center p-4 {% if item.odd %}md:order-last{% endif %}">
+        <img alt="{{ item.title }}" src="{{ item.image }}" loading="lazy" />
       </div>
+      <!-- Description -->
+      <div class="flex flex-col items-start justify-around gap-12 p-4 border-t-2 md:border-t-0 {% if item.odd %}md:border-r-2 md:border-l-0{% else %} md:border-l-2{% endif %} md:p-12">
+        <div class="flex flex-col items-start justify-center">
+          <!-- Title -->
+          <h2 class="text-4xl">{{ item.title }}</h2>
+          <!-- Badges -->
+          <div class="flex py-0">
+            {% for t in item.tags %}
+            <div class="uppercase badge badge-secondary">{{t}}</div>
+            {% endfor %}
+          </div>
+        </div>
+        <a class="w-40 btn btn-primary" href="{{ item.url }}">Ver Proyecto</a>
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>

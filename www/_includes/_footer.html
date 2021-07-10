@@ -1,7 +1,6 @@
 <footer class="bg-gradient-footer">
   <!-- Background Image -->
-  <div class="flex flex-col items-center justify-center gap-16 bg-center bg-no-repeat bg-cover"
-      style="height: 80vh; background-image: url('/static/images/patterns/footer-pattern-bg.png');">
+  <div class="flex flex-col items-center justify-center gap-16 bg-center bg-no-repeat bg-cover h-[80vh]" style="background-image: url('/static/images/patterns/footer-pattern-bg.png')">
     <!-- Wraper -->
     <div class="flex flex-col items-center justify-center max-w-screen-lg gap-16 p-12 mx-auto">
       <!-- Title -->
@@ -11,11 +10,11 @@
       <!-- Social -->
       <div class="flex items-center justify-center gap-8">
         {% for item in site.social %}
-          <a class="btn btn-circle btn-lg btn-secondary btn-wide" href="{{ item.url }}" alt="{{ item.title }}">
-            <svg class="w-6 h-6">
-              <use xlink:href="/static/vectors.svg#{{ item.icon }}"></use>
-            </svg>
-          </a>
+        <a class="btn btn-circle btn-lg btn-secondary btn-wide" href="{{ item.url }}" alt="{{ item.title }}">
+          <svg class="w-6 h-6">
+            <use xlink:href="/static/vectors.svg#{{ item.icon }}"></use>
+          </svg>
+        </a>
         {% endfor %}
       </div>
     </div>
