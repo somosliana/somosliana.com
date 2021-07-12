@@ -15,6 +15,9 @@
       <link rel="stylesheet" type="text/css" href="/prism-tomorrow.css" />
     {% endif %}
     {% seo %}
+    <style>
+      [x-cloak] { display: none !important; }
+    </style>
   </head>
 
   <body x-data="{ 'showMenu': false, 'showContact': false }" @keydown.escape="showMenu = false; showContact = false">
