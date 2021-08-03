@@ -16,7 +16,7 @@
       "image": "/static/vectors/branding.svg"
     },
     {
-      "title": "Iconos/Ilustracion",
+      "title": "Iconos / Ilustracion",
       "description": "Sets de Ilustracion<br>Set de Iconos<br>Diseño de Personajes",
       "image": "/static/vectors/illustration.svg"
     },
@@ -33,44 +33,40 @@
   ],
   "clients": [
     {
-      "title": "Agoda",
-      "image": "/static/images/clients/agoda.png"
+      "title": "FH Servicios SRL",
+      "image": "/static/images/clients/fiori.png"
     },
     {
-      "title": "Anyleads",
-      "image": "/static/images/clients/anyleads.png"
+      "title": "Cintia Susñar",
+      "image": "/static/images/clients/cintia.png"
     },
     {
-      "title": "Crisp",
-      "image": "/static/images/clients/crisp.png"
+      "title": "Papelera Tauro",
+      "image": "/static/images/clients/tauro.png"
     },
     {
-      "title": "Flyr",
-      "image": "/static/images/clients/flyr.png"
+      "title": "UTN Tierra del Fuego",
+      "image": "/static/images/clients/utntdf.png"
     },
     {
-      "title": "Getsafe",
-      "image": "/static/images/clients/getsafe.png"
+      "title": "La Union",
+      "image": "/static/images/clients/launion.png"
     },
     {
-      "title": "Grab",
-      "image": "/static/images/clients/grab.png"
+      "title": "Indeciso Vampiro",
+      "image": "/static/images/clients/indecisovampiro.png"
     },
     {
-      "title": "Hoopsai",
-      "image": "/static/images/clients/hoopsai.png"
+      "title": "EXCEL Instituto",
+      "image": "/static/images/clients/excel.png"
     },
     {
-      "title": "Roger",
-      "image": "/static/images/clients/roger.png"
+      "title": "San Jose | Seguridad e Higiene",
+      "image": "/static/images/clients/sanjose.png"
     },
     {
-      "title": "Teachable",
-      "image": "/static/images/clients/teachable.png"
-    },
-    {
-      "title": "Teachable",
-      "image": "/static/images/clients/teachable.png"
+      "title": "Barbershop CREAM",
+      "image": "/static/images/clients/cream.png"
     }
   ],
   "social": [
