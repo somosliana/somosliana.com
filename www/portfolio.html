@@ -15,9 +15,9 @@ layout: default
 <section class="flex flex-col items-center max-w-screen-lg gap-12 py-12 mx-auto text-black">
   <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
     {% for item in projects.projects %}
-    <a href="{{ item.url }}" class="flex flex-col shadow-2xl rounded-2xl max-w-sm">
+    <a href="{{ item.url }}" class="flex flex-col shadow-2xl rounded-2xl max-w-sm bg-white">
       <img alt="{{ item.title }}" class="rounded-t-2xl" src="{{ item.image }}" loading="lazy" />
-      <div class="flex flex-col gap-6 p-4">
+      <div class="flex flex-col gap-2 p-4 border-t-2">
         <h2 class="text-2xl font-bold">{{ item.title }}</h2>
         <div class="flex flex-row">
           {% for t in item.tags %}

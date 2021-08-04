@@ -60,7 +60,7 @@ path: home
   <!-- Grid -->
   <div class="flex flex-col gap-12">
     {% for item in projects.projects limit:3 %}
-    <div class="grid grid-rows-2 p-8 shadow-2xl sm:grid-rows-none sm:grid-cols-2 max-w-sm sm:max-w-screen-md rounded-3xl">
+    <div class="bg-white grid grid-rows-2 p-8 shadow-2xl sm:grid-rows-none sm:grid-cols-2 max-w-sm sm:max-w-screen-md rounded-3xl">
       <!-- Image -->
       <div class="flex items-center justify-center p-4 {% if item.odd %}sm:order-last{% endif %}">
         <img alt="{{ item.title }}" src="{{ item.image }}" loading="lazy" />

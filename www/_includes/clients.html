@@ -2,35 +2,35 @@
 <div class="grid md:hidden items-center justify-center grid-cols-2 gap-8">
   {% for item in site.clients limit: 6 offset: 0%}
   <div class="flex items-center justify-center">
-    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28" loading="lazy" />
+    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28 bg-white p-4 rounded-3xl shadow-2xl" loading="lazy" />
   </div>
   {% endfor %}
 </div>
 <!-- Desktop -->
-<div class="hidden md:grid items-center justify-center grid-cols-5 gap-14">
-  <div class="flex flex-col gap-14">
+<div class="hidden md:grid items-center justify-center grid-cols-3 lg:grid-cols-5 gap-14">
+  <div class="hidden lg:flex flex-col gap-14 ">
     {% for item in site.clients limit: 1 %}
-    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28" loading="lazy" />
+    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28 bg-white p-4 rounded-3xl shadow-2xl" loading="lazy" />
     {% endfor %}
   </div>
   <div class="flex flex-col gap-14">
     {% for item in site.clients limit: 2 offset: 1%}
-    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28" loading="lazy" />
+    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28 bg-white p-4 rounded-3xl shadow-2xl" loading="lazy" />
     {% endfor %}
   </div>
   <div class="flex flex-col gap-14">
     {% for item in site.clients limit: 3 offset: 3%}
-    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28" loading="lazy" />
+    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28 bg-white p-4 rounded-3xl shadow-2xl" loading="lazy" />
     {% endfor %}
   </div>
   <div class="flex flex-col gap-14">
     {% for item in site.clients limit: 2 offset: 6%}
-    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28" loading="lazy" />
+    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28 bg-white p-4 rounded-3xl shadow-2xl" loading="lazy" />
     {% endfor %}
   </div>
-  <div class="flex flex-col gap-14">
+  <div class="hidden lg:flex flex-col gap-14">
     {% for item in site.clients limit: 1 offset: 8 %}
-    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28" loading="lazy" />
+    <img alt="{{ item.title }}" src="{{ item.image }}" class="h-28 bg-white p-4 rounded-3xl shadow-2xl" loading="lazy" />
     {% endfor %}
   </div>
 </div>
