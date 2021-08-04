@@ -1,31 +1,26 @@
-<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch-->
-  <desc>Created with Sketch.</desc>
-  <defs>
-    <linearGradient id="fe-linearGradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop stop-color="#FFA8E8" offset="0%"></stop>
-      <stop stop-color="#FFE6E6" offset="100%"></stop>
-    </linearGradient>
-    <rect id="fe-path-3" x="0" y="0" width="27" height="19" rx="2"></rect>
-    <filter id="fe-filter-4" x="-27.8%" y="-13.2%" width="137.0%" height="152.6%" filterUnits="objectBoundingBox">
-      <feOffset dx="-5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-      <feColorMatrix values="0 0 0 0 0.835294118   0 0 0 0 0.305882353   0 0 0 0 0.674509804  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
-    </filter>
-  </defs>
-  <g id="Fe-Object-Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-    <g id="feObject" transform="translate(62.000000, 62.000000)">
-      <circle id="feObjectBg" fill="url(#fe-linearGradient-2)" cx="38.5" cy="38.5" r="38.5"></circle>
-      <g id="feObjectWindow" transform="translate(27.000000, 28.000000)">
-        <g id="fe-Rectangle-14">
-          <use fill="black" fill-opacity="1" filter="url(#fe-filter-4)" xlink:href="#fe-path-3"></use>
-          <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#fe-path-3"></use>
-        </g>
-        <path id="fe-Rectangle-14-Copy-2" d="M2,0 L25,0 C26.1045695,-2.02906125e-16 27,0.8954305 27,2 L27,5 L0,5 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" fill="#FFE6F6"></path>
-      </g>
-      <g id="feObjectCode" transform="translate(42.000000, 27.000000)" stroke="#E778C1" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
-        <polyline id="feObjectArrow" points="0.128498246 0 6 5.93505544 0 12" data-svg-origin="0 0" style="opacity: 0;" transform="matrix(1,0,0,1,-10,0)"></polyline>
-        <path id="fe-Path-69" d="M7,13 L15,13"></path>
-      </g>
-    </g>
-  </g>
+<svg width="78" height="77" viewBox="0 0 78 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38.5039 77C59.7669 77 77.0039 59.763 77.0039 38.5C77.0039 17.237 59.7669 0 38.5039 0C17.2409 0 0.00390625 17.237 0.00390625 38.5C0.00390625 59.763 17.2409 77 38.5039 77Z" fill="url(#paint0_linear)"/>
+<g filter="url(#filter0_d)">
+<path d="M52.0039 28H29.0039C27.8993 28 27.0039 28.8954 27.0039 30V45C27.0039 46.1046 27.8993 47 29.0039 47H52.0039C53.1085 47 54.0039 46.1046 54.0039 45V30C54.0039 28.8954 53.1085 28 52.0039 28Z" fill="black"/>
+</g>
+<path d="M52.0039 28H29.0039C27.8993 28 27.0039 28.8954 27.0039 30V45C27.0039 46.1046 27.8993 47 29.0039 47H52.0039C53.1085 47 54.0039 46.1046 54.0039 45V30C54.0039 28.8954 53.1085 28 52.0039 28Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.0039 28H52.0039C53.1085 28 54.0039 28.8954 54.0039 30V33H27.0039V30C27.0039 28.8954 27.8993 28 29.0039 28Z" fill="#FFE6F6"/>
+<path d="M49.0039 40H57.0039" stroke="#E778C1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.5039 39L48.8701 34.3128" stroke="#E778C1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.5039 29.3128L48.8701 34" stroke="#E778C1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_d" x="18.0039" y="28" width="36" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-5" dy="5"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.835294 0 0 0 0 0.305882 0 0 0 0 0.67451 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear" x1="0.00390625" y1="0" x2="77.0039" y2="77" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFA8E8"/>
+<stop offset="1" stop-color="#FFE6E6"/>
+</linearGradient>
+</defs>
 </svg>
