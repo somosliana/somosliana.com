@@ -3,32 +3,32 @@
     {
       "title": "UI/UX",
       "description": "Prototipos, Diseños<br>Websites<br>Wireframing",
-      "image": "/static/vectors/uxui.svg"
+      "image": "/static/images/services/uxui.svg"
     },
     {
       "title": "Desarrollo",
       "description": "Mobile App<br>Web App<br>Websites",
-      "image": "/static/vectors/development.svg"
+      "image": "/static/images/services/development.svg"
     },
     {
       "title": "Branding",
       "description": "Diseño de Marca<br>Marketing Digital<br>Redes Sociales",
-      "image": "/static/vectors/branding.svg"
+      "image": "/static/images/services/branding.svg"
     },
     {
       "title": "Iconos e Ilustracion",
       "description": "Sets de Ilustracion<br>Set de Iconos<br>Diseño de Personajes",
-      "image": "/static/vectors/illustration.svg"
+      "image": "/static/images/services/illustration.svg"
     },
     {
       "title": "Animacion",
       "description": "Animacion 2D<br>Animacion UI",
-      "image": "/static/vectors/motion.svg"
+      "image": "/static/images/services/motion.svg"
     },
     {
       "title": "Fotografia",
       "description": "Productos<br>Publicidad",
-      "image": "/static/vectors/photography.svg"
+      "image": "/static/images/services/photography.svg"
     }
   ],
   "clients": [

@@ -8,27 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lora" rel="stylesheet" />
-    <link href="/static/images/favicon.png" rel="icon" type="image/png" />
+    <link rel="icon" type="image/svg+xml" href="/static/images/favicon.svg" />
+    <link rel="icon" type="image/png" href="/static/images/favicon.png" />
     <link href="/tailwind.css" rel="stylesheet" />
     <script src="/alpine.js" defer></script>
-    {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/prism-tomorrow.css" />
-    {% endif %}
+    {% if prism == true %}<link rel="stylesheet" type="text/css" href="/prism-tomorrow.css" />{% endif %}
     {% seo %}
-    <style>
-      [x-cloak] { display: none !important; }
-    </style>
+    <style>[x-cloak] { display: none !important;}</style>
   </head>
 
   <body x-data="{ 'showMenu': false, 'showContact': false }" @keydown.escape="showMenu = false; showContact = false">
     {% include _header.html %}
     <main>{{ content }}</main>
-    {% if path != "404" %}
-      {% include _footer.html %}
-    {% endif %}
-    {% include _contact.html %}
-    {% if path == "home" %}
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% if path != "404" %} {% include _footer.html %} {% endif %} {% include _contact.html %} {% if path == "home" %}
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
   </body>
 </html>
