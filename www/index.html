@@ -5,11 +5,13 @@ path: home
 
 <!-- Hero -->
 <section class="bg-gradient-hero">
-  <div class="flex flex-col items-center justify-center gap-8 px-4 text-center bg-center bg-no-repeat bg-cover" style="height: 85vh; background-image: url('/static/images/patterns/hero-pattern-bg.png')">
-    <!-- Title -->
-    <h1 class="text-5xl font-playfairDisplay font-bold text-center sm:text-7xl">Somos Liana</h1>
-    <!-- Subtitle -->
-    <h2 class="text-lg font-normal">Una agencia de diseño y desarrollo de Argentina</h2>
+  <div class="flex flex-col items-center justify-center gap-12 px-4 text-center bg-center bg-no-repeat bg-cover" style="height: 85vh; background-image: url('/static/images/patterns/hero-pattern-bg.png')">
+    <div class="flex flex-col items-center justify-center gap-4">
+      <!-- Title -->
+      <h1 class="text-6xl font-playfairDisplay font-bold text-center md:text-9xl">Somos Liana</h1>
+      <!-- Subtitle -->
+      <h2 class="text-xl font-normal">Una agencia de diseño y desarrollo de Argentina</h2>
+    </div>
     <!-- Button -->
     <button class="text-xl text-purple-600 bg-white btn btn-accent btn-wide uppercase" @click="showContact = true" type="button">Hablemos!</button>
   </div>
@@ -69,7 +71,7 @@ path: home
       <div class="flex flex-col items-start justify-around gap-12 p-4 border-t-2 sm:border-t-0 {% if item.odd %}sm:border-r-2 sm:border-l-0{% else %} sm:border-l-2{% endif %} sm:p-12">
         <div class="flex flex-col items-start justify-center gap-2">
           <!-- Title -->
-          <h2 class="text-2xl font-bold">{{ item.title }}</h2>
+          <h2 class="font-bold text-2xl sm:text-3xl">{{ item.title }}</h2>
           <!-- Badges -->
           <div class="flex py-0">
             {% for t in item.tags %}
