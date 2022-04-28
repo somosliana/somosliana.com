@@ -1,16 +1,13 @@
-const minifyHtml = require('./src/minifyHtml')
-const browsersyncConfig = require('./src/browsersyncConfig')
-const pluginSEO = require('eleventy-plugin-seo')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const yaml = require('js-yaml')
 const { DateTime } = require('luxon')
+const htmlmin = require('html-minifier')
 
 module.exports = function (config) {
   // Extensions
   config.addDataExtension('yaml', (contents) => yaml.safeLoad(contents))
 
   // Plugins
-  config.addPlugin(pluginSEO, require('./www/_data/seo.json'))
   config.addPlugin(syntaxHighlight)
 
   // Filters
@@ -29,9 +26,7 @@ module.exports = function (config) {
   // Conditional configs
   const isProduction = process.env.NODE_ENV === 'production'
   if (isProduction) {
-    config.addTransform('minifyHtml', minifyHtml)
-  } else {
-    config.setBrowserSyncConfig(browsersyncConfig)
+    config.addTransform('minifyHTML', minifyHTML)
   }
 
   return {
@@ -42,4 +37,17 @@ module.exports = function (config) {
       layouts: '_layouts'
     },
   }
+}
+
+function minifyHTML (content, outputPath) {
+  const isHtml = outputPath.endsWith('.html')
+  const config = {
+    useShortDoctype: true,
+    removeComments: true,
+    collapseWhitespace: true,
+  }
+  if (isHtml) {
+    return htmlmin.minify(content, config)
+  }
+  return content
 }

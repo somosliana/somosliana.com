@@ -19,7 +19,9 @@
   <body class="bg-[#f8f8fc]" x-data="{ 'showMenu': false, 'showContact': false }" @keydown.escape="showMenu = false; showContact = false">
     {% include "_header.html" %}
     <main>{{ content }}</main>
-    {% if path != "404" %} {% include "_footer.html" %} {% endif %} {% include "_contact.html" %} {% if path == "home" %}
+    {% if path != "404" %}{% include "_footer.html" %}{% endif %}
+    {% include "_contact.html" %} 
+    {% if path == "home" %}
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
   </body>
