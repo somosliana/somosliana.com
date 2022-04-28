@@ -1,20 +1,17 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  mode: 'jit',
-  purge: [
+  content: [
     './www/**/*.html',
     './public/**/*.html',
   ],
-  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
         playfairDisplay:  "'Playfair Display', serif",
         lora:  "'Lora', serif"
-      },
-      colors: require('daisyui/colors'),
+      }
     },
   },
   variants: {

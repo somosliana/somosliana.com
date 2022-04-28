@@ -6,9 +6,6 @@ const yaml = require('js-yaml')
 const { DateTime } = require('luxon')
 
 module.exports = function (config) {
-  // Better defaults
-  config.setDataDeepMerge(true)
-
   // Extensions
   config.addDataExtension('yaml', (contents) => yaml.safeLoad(contents))
 
