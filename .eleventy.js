@@ -20,7 +20,7 @@ module.exports = function (config) {
 
   // Copy files
   config.addPassthroughCopy({
-    './node_modules/alpinejs/dist/alpine.js': 'alpine.js',
+    './node_modules/alpinejs/dist/cdn.min.js': 'alpine.js',
     './netlifycms.yml': './admin/config.yml',
     './node_modules/prismjs/themes/prism-tomorrow.css': 'prism-tomorrow.css',
     './www/static': 'static',
